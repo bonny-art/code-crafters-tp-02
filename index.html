@@ -24,7 +24,7 @@
 
     <!-- Styles -->
     <script type="module" crossorigin src="/code-crafters-tp-02/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/code-crafters-tp-02/assets/index-yHQRWOHD.css">
+    <link rel="stylesheet" crossorigin href="/code-crafters-tp-02/assets/index-Cio2Zqla.css">
   </head>
   <body>
     <header class="header">
@@ -74,9 +74,105 @@
   </div>
 </section>
 
-      <section class="reviews">
-  <div class="container">
-    <p>reviews</p>
+      <section class="section reviews" id="reviews">
+  <div class="container reviews-container">
+    <h2 class="section-title">
+      What our <span class="section-title-accent">students</span> say
+    </h2>
+    <p class="reviews-descr">
+      Hear from our students about their learning journey with us, as they share
+      their experiences, progress, and the transformative impact
+    </p>
+
+    <div class="reviews-swiper-container">
+      <div
+        class="swiper-wrapper reviews-swiper-wrapper"
+        id="card-set reviews-swiper-wrapper"
+      >
+        <!-- Slide 01 -->
+        <div class="card-set-item swiper-slide reviews-swiper-slide">
+          <div class="reviews-card">
+            <div class="reviews-client-box">
+              <div class="reviews-client-photo-box">
+                <img
+                  class="reviews-client-photo"
+                  srcset="data:image/webp;base64,UklGRvYCAABXRUJQVlA4WAoAAAAQAAAAMQAAMQAAQUxQSOYAAAABgFBbb97mgyAGFZOGic1gYZAxUBkYQiAYgiAIgiFov4n9lUBETAAmajWPkZnRrSjWy2fkzTBds/Wc2nSenjm96aR95MIoU1652O6J53KXG+JJ6HLNk9IvvZLULtSk3f/R4Bn6V0vi8w9N6u1X4+oANMkFMLYDCLaAJv2j8hXjs87nwRfJP97gLccbBF84Xzc+q3xF+RTBFsDBZoCwKYDO1QBg49JfOJka/tTBE/oXdp6C/43FcNU5HJfFGVyuQXydC27bKsPMGivGB+Zqm3cqpmub059YqhZ34hCs12o9MnOEW3lgIlZQOCDqAQAAsAsAnQEqMgAyAD6NOJZHpSMiITAYDPigEYllALmQLsks2jtwDR1bfg7ZleU44/PUoXZDy9TcXUa3FhoRbL8OyJK87FmU50/7U0nDzceGYYRIDgeEdPQGuNbAw5xD8gg6HHJGU16wAP7+SNyeCNETvkQH9Ne6L0cRRSb6+zrefbetoKt+RcXosBFzy91RGNWHfeLmTrPbEpApmU6CLCZ/98Rt4NCA9vxA7J0d31ThMRiVVlNoF/zODzHCjh2VpdtS7thkPG5DL4VO5Vgxa37L/tNcVrVkEScaHs9+GxfX0IwJIZghJml05dhVIwOnXU4YMoFeoUCExrzGCzr9O/fnl5B6mFYW27Jukmd+YiHJq1RdGwP3R0k8waFQwCql8lLHxjlXW8N6HvhXfzQl20T8mqRt2rUzr0cv8jF638QA5mM+bRd+x4Qrg4X0qXrVthjWDrRg9MGBxviMjd8B94mkqeiLX3ydXNzl0VhgfYHc/rZnCtuNHCyq5ZpeOnLZVHLGwrccXeehWww2TLWj2jKBpmgW6AvVZRdu42/81ApRct/Y4Np8rE9oc30DyL+gk0mv4nP//KepmZpk2Pa///v50IJUmG3G3brs7vYKCiqmQRfmmt9CO33aUNFfBvH/r6P//BvK0+QhOJAAAA== 1x, data:image/webp;base64,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 2x"
+                  src="data:image/webp;base64,UklGRvYCAABXRUJQVlA4WAoAAAAQAAAAMQAAMQAAQUxQSOYAAAABgFBbb97mgyAGFZOGic1gYZAxUBkYQiAYgiAIgiFov4n9lUBETAAmajWPkZnRrSjWy2fkzTBds/Wc2nSenjm96aR95MIoU1652O6J53KXG+JJ6HLNk9IvvZLULtSk3f/R4Bn6V0vi8w9N6u1X4+oANMkFMLYDCLaAJv2j8hXjs87nwRfJP97gLccbBF84Xzc+q3xF+RTBFsDBZoCwKYDO1QBg49JfOJka/tTBE/oXdp6C/43FcNU5HJfFGVyuQXydC27bKsPMGivGB+Zqm3cqpmub059YqhZ34hCs12o9MnOEW3lgIlZQOCDqAQAAsAsAnQEqMgAyAD6NOJZHpSMiITAYDPigEYllALmQLsks2jtwDR1bfg7ZleU44/PUoXZDy9TcXUa3FhoRbL8OyJK87FmU50/7U0nDzceGYYRIDgeEdPQGuNbAw5xD8gg6HHJGU16wAP7+SNyeCNETvkQH9Ne6L0cRRSb6+zrefbetoKt+RcXosBFzy91RGNWHfeLmTrPbEpApmU6CLCZ/98Rt4NCA9vxA7J0d31ThMRiVVlNoF/zODzHCjh2VpdtS7thkPG5DL4VO5Vgxa37L/tNcVrVkEScaHs9+GxfX0IwJIZghJml05dhVIwOnXU4YMoFeoUCExrzGCzr9O/fnl5B6mFYW27Jukmd+YiHJq1RdGwP3R0k8waFQwCql8lLHxjlXW8N6HvhXfzQl20T8mqRt2rUzr0cv8jF638QA5mM+bRd+x4Qrg4X0qXrVthjWDrRg9MGBxviMjd8B94mkqeiLX3ydXNzl0VhgfYHc/rZnCtuNHCyq5ZpeOnLZVHLGwrccXeehWww2TLWj2jKBpmgW6AvVZRdu42/81ApRct/Y4Np8rE9oc30DyL+gk0mv4nP//KepmZpk2Pa///v50IJUmG3G3brs7vYKCiqmQRfmmt9CO33aUNFfBvH/r6P//BvK0+QhOJAAAA=="
+                  alt="Photo of client Anna"
+                  width="50"
+                  height="50"
+                />
+              </div>
+              <div class="reviews-client-caption">
+                <h3 class="reviews-client-name">Anna</h3>
+                <div class="reviews-client-status">Student</div>
+              </div>
+            </div>
+            <div class="reviews-comment-box">
+              <p class="reviews-comment">
+                My experience at the language school has been nothing short of
+                amazing. The teachers are dedicated and the learning environment
+                is stimulating. I feel more confident in my English skills.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 02 -->
+        <div class="card-set-item swiper-slide reviews-swiper-slide">
+          <div class="reviews-card">
+            <div class="reviews-client-box">
+              <div class="reviews-client-photo-box">
+                <img
+                  class="reviews-client-photo"
+                  srcset="data:image/webp;base64,UklGRsQCAABXRUJQVlA4WAoAAAAQAAAAMQAAMQAAQUxQSOYAAAABgFBbb97mgyAGFZOGic1gYZAxUBkYQiAYgiAIgiFov4n9lUBETAAmajWPkZnRrSjWy2fkzTBds/Wc2nSenjm96aR95MIoU1652O6J53KXG+JJ6HLNk9IvvZLULtSk3f/R4Bn6V0vi8w9N6u1X4+oANMkFMLYDCLaAJv2j8hXjs87nwRfJP97gLccbBF84Xzc+q3xF+RTBFsDBZoCwKYDO1QBg49JfOJka/tTBE/oXdp6C/43FcNU5HJfFGVyuQXydC27bKsPMGivGB+Zqm3cqpmub059YqhZ34hCs12o9MnOEW3lgIlZQOCC4AQAAcAsAnQEqMgAyAD6RQJlJpaOiISYarYiwEglpABIInnJkzdS3f8Mem1yMfZ6/8lXxezosuit9A8VKbiFNjfXWjAFDw8j8SpyneSF3ubfMdqSqc+U/3gOkNQsQqDgKDkLPQnfsAAD+/s1rkTZArzUmgI/LzJgTARfi8X7pxXCYVMtI+cN4ehxfPfJkwlICo2keKPQx37PLl/qSYDBS8N5nNjxPYqLfvJwTEi081NW248ctE1NZCUpksC+7BtDOF05AG++j8dRHXTr4kCmj19eUHwHcFoDFQvTl10nMFe0q20ZRglCABfztDsLwRgiVkl12VXggIRRm6wpw1q74RYJp8a3jfnthTQVubXCwCPZl50w5dFkUGUI5Xhwmwpdwqw0TvOv5EyF2mN6/uyTc/rWqf+Uo7fv86GVjj8rPWHhlS//PvlrTYcpd2j5Sfm08p+vBQailqMp9ZgTRtK1x6H0eJlRDF8TtgT+vxdDIXdHwlIdmR/wQ5SALU9kVt++uw8wI3fKJYNnfQwKdQ/zTBG5WBRa3EWfaXD/FkVEz9DQQ1gg2hx59rmIt2XKGtGhjVj3w2fNzpVgAAAA= 1x, data:image/webp;base64,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 2x"
+                  src="data:image/webp;base64,UklGRsQCAABXRUJQVlA4WAoAAAAQAAAAMQAAMQAAQUxQSOYAAAABgFBbb97mgyAGFZOGic1gYZAxUBkYQiAYgiAIgiFov4n9lUBETAAmajWPkZnRrSjWy2fkzTBds/Wc2nSenjm96aR95MIoU1652O6J53KXG+JJ6HLNk9IvvZLULtSk3f/R4Bn6V0vi8w9N6u1X4+oANMkFMLYDCLaAJv2j8hXjs87nwRfJP97gLccbBF84Xzc+q3xF+RTBFsDBZoCwKYDO1QBg49JfOJka/tTBE/oXdp6C/43FcNU5HJfFGVyuQXydC27bKsPMGivGB+Zqm3cqpmub059YqhZ34hCs12o9MnOEW3lgIlZQOCC4AQAAcAsAnQEqMgAyAD6RQJlJpaOiISYarYiwEglpABIInnJkzdS3f8Mem1yMfZ6/8lXxezosuit9A8VKbiFNjfXWjAFDw8j8SpyneSF3ubfMdqSqc+U/3gOkNQsQqDgKDkLPQnfsAAD+/s1rkTZArzUmgI/LzJgTARfi8X7pxXCYVMtI+cN4ehxfPfJkwlICo2keKPQx37PLl/qSYDBS8N5nNjxPYqLfvJwTEi081NW248ctE1NZCUpksC+7BtDOF05AG++j8dRHXTr4kCmj19eUHwHcFoDFQvTl10nMFe0q20ZRglCABfztDsLwRgiVkl12VXggIRRm6wpw1q74RYJp8a3jfnthTQVubXCwCPZl50w5dFkUGUI5Xhwmwpdwqw0TvOv5EyF2mN6/uyTc/rWqf+Uo7fv86GVjj8rPWHhlS//PvlrTYcpd2j5Sfm08p+vBQailqMp9ZgTRtK1x6H0eJlRDF8TtgT+vxdDIXdHwlIdmR/wQ5SALU9kVt++uw8wI3fKJYNnfQwKdQ/zTBG5WBRa3EWfaXD/FkVEz9DQQ1gg2hx59rmIt2XKGtGhjVj3w2fNzpVgAAAA="
+                  alt="Photo of client Mykhailo"
+                  width="50"
+                  height="50"
+                />
+              </div>
+              <div class="reviews-client-caption">
+                <h3 class="reviews-client-name">Mykhailo</h3>
+                <div class="reviews-client-status">Student</div>
+              </div>
+            </div>
+            <p class="reviews-comment">
+              The school offers a great balance of language theory and practical
+              exercises. The personalized feedback from the teachers has helped
+              me improve my weak areas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 03 -->
+        <div class="card-set-item swiper-slide reviews-swiper-slide">
+          <div class="reviews-card">
+            <div class="reviews-client-box">
+              <div class="reviews-client-photo-box">
+                <img
+                  class="reviews-client-photo"
+                  srcset="data:image/webp;base64,UklGRgQEAABXRUJQVlA4WAoAAAAQAAAAMQAAMQAAQUxQSOYAAAABgFBbb97mgyAGFZOGic1gYZAxUBkYQiAYgiAIgiFov4n9lUBETAAmajWPkZnRrSjWy2fkzTBds/Wc2nSenjm96aR95MIoU1652O6J53KXG+JJ6HLNk9IvvZLULtSk3f/R4Bn6V0vi8w9N6u1X4+oANMkFMLYDCLaAJv2j8hXjs87nwRfJP97gLccbBF84Xzc+q3xF+RTBFsDBZoCwKYDO1QBg49JfOJka/tTBE/oXdp6C/43FcNU5HJfFGVyuQXydC27bKsPMGivGB+Zqm3cqpmub059YqhZ34hCs12o9MnOEW3lgIlZQOCD4AgAAUBAAnQEqMgAyAD6RQJpIpaOioS4UmciwEglsAK5PnL7cjGq/4rdozSWBvWdt8fMZ+wH6Z+755zm+vegB0w0+3Y1oT7hGIGv2l/b5gZC65fnHxtHCpFYsu9qVWBFE4tp55dxd5pmGyr/Oi9YIkirWtnaoj82P2P95VsjZJH2LF+2dobArSks6cDxGAAD+w135onUcGPeW6es3hOYv5UjUTjDsbo/eMIto2YVBhuHwGRuzmdg9tcPXsttlTdNeh5npVpzdZ67dhNYrnF1bvaMgZHjDls73xyVRkdeWyWKYB5BbudcZU/WRk16RkwPF9e0oAToNqKbs7yHC2IAswBeJ6xwhl8m+Y3v0n1Qt6O4XN31lxBHnTCTEuivqC8zP8+YUNm0uzheDN/CjC0si2VAFfzUl4gOW7uL7nOHRHM//Hc25/NjfFY3LF6/zl3//94cwca2CC2JExUAs55J6trztUMxHASJljnW39y6X3tsnjf66qomKUDFZajQ6zgl+lGJa6fn8Wwe39aC2tfSAuxLj1tY0XJkIal7fv4gOIt0xqcwKfbG7p1oxrXKx4/N5rA6CdDR6dQD/svPZJuxlqN4Z/O6BDR/mbmAbFCmgSHq1WjFhJ9o7KAcs5Z7eP+PO9oy0jMbV2DPjgLYvZARWGFVnUXuwiDvjU9NO5iHTP7a8ynom2LbMGXKYtzhn45iroi27ZgvvGD0QPQySQtqjwb2xuFc9Gjw8zVtbsIUwzNLvItIwCyDZpX9AE16GhotLvNqlRuhLi8GK09aPEPlti9wegbNZdjHjoL3l39jSrD2u04f5nVutPJSWTypperrpjra4zw///MteTYatms+dgTjgTpj4SVpIFkvizodIRmMa4NO654XIhhj/6Av7//+pQ2+w7L+rPTn9OKmTgdzFVCUUKfulH//4k7NJ9q7RcIt3cV23nnO+zWgh1tx8sCjKsSusQaA9HMw4dCUrw/4zn/+2LB4/+6J4I1Y+RyLhlBjKZw+MjzAAAAAAAA== 1x, data:image/webp;base64,UklGRvAIAABXRUJQVlA4WAoAAAAQAAAAYwAAYwAAQUxQSN8BAAABkJVtb91IPwQzGDFYM2gYzDBoGTgMZhloGBhCIBhCIAiCIOiip8T+vYe7iJgAdJu+im67eUSEW2talgSqUqrFobZdM4lFLU61ugyXfu/RoV1lpKwevVYZRVp0XWWE9BPdV+lu9RjQrn1Ji0GbdLR6DOtrL+knhtY+ZI/BTToQi+FNTsseBD2flD0oej4le5D0fIJ40HQ5TCyImhxlQXVPx/wEWT1kDbrrAeJ8XN5rQbi9dQvK6xtinDy9VoO0viRBW16pvNoLEsTzs8pMn0gw9/ToRi2+Hxm3/cES5Je7yk7vjJ0ByEH/A7jxK8DGrwLGz5BigmmZwWeZQdEZaJvBNoXdZmA+A4//jj4DtxnYPoO2TUFnoGUG5WsGlzSDBONnQOW3AYXfFRB+GYCxMwBQdvVuYXe5w87N8PCb2/VRcmryCMqs4mlmJs/QeFW8KLzkFSiripeTczJ5DSunK95tjBreFufj8h5WPgVHKhvFoWnnYjhYjInJURDn4YLjs7PwjDOzc/CMc7Mz8IyzxcYzwflio+2CLnUsTeh09XG8oF9pozRB1zcbwQt6l9qfJgwota8mGFRqN66/MLDcrIf9O2H0S7VzTC/gmG+bHWO1fIBquhRtzfzObd+0fCZ0CwBWUDgg6gYAAFAkAJ0BKmQAZAA+jTqXR6Ujp6EvFZ2I8BGJbAMYA/QBCCWXsm+n/pvpDV//RcCehmG/t7fNN5pvo33nD0APLk9lz+6P/M16vdeyfg7veQ7lDvhP5ASdXg0QY/fOd1W4Xrsitm+P+f0Nf8UMVAXH1Y/bTW1Gn6kdCiSviW111040acYHQaf5lmrhyo1BhgCBc+RauiPas+qha6m0cyyd3JKNBef1ECtYDJqtwKrvcPjSXT1EtCxbN8DO6ANxN+Ni/Luq4Ky9d5uBmRj4XuBdot+DBnxpLyKfiSm31q02EPagAudG0TT/35Hw8I77XafAc8wBX9rd7ARqZiqlv79S1UA7cpOuWjDhSvITtiqD/8UpYfU9dNL0/hDZ+dqBWSJ95MwjjjAd7zps9CiAAP75WDL3//sxL//sfGxnatqW+FjC35gTkf58NYqU//l9JdExZV0IOD7zfDfgj3ZFDOgsxutm4ufD0l/2XEahdxynEp029vJZXD00aDSM5GFD0/9knUKSFLjs+hMXY6l+EiW4PoW/yItW69Em0a+WfKqjdBIpkJX4CbdHK6f0lPEZcNHY+uhLr/p3QkdgF04/+41XbRK2oFC6Ahw3F1YeeGQvEpEc0qOkByMkFR5JOnzX3o4lUM//7D7q/MM8eUQwBgFH44tZFWAfXtcODWTOFhiZ//LV8633QsufrMfNW2BOoGrnks17Tf5pKY/q0j7RnKIV//ajWH55qeDcTShqlKk9nznDx7CUeaCK1TPyUxtHT7Y7h4w6/Mmbjt9l5Q/AfeS2LCT77GqgFLfe54PYSV61PE0UxI7n6C+A0V0heZK19wN2cavbzkef9ooBCAoc3kGPRcMdUVWJVkQobeWgHBirFbV+AAsW2hdM8sRPKyeIeKAq0c1SS6HRPM+/anGd8EwQa7FPOG8f1ueYk4D9m2PoujjnNz/FsVw4JZ8tEZGuLlmyKyWKxdtF3HtypVoYR7cpfeLyW//vSd93cd5ybr3QZLUt5qJoUvL2Hv7NC1/XN8qQ/e9i1XM/YRszDrGGtsCblZHqFhxWnKgfObwjUqQjhXt5lh/HozawMdnLQRlhK1uXiXppOJMUQunaWl/7xJ92z06hUSm7GfEhnyc4zay1qCcmF8KjoH4rK7Op1ItAeg4vWaz0mANmpg/FbdCtdsYIPHikQZegurAXU81bvLaqMvuAFl6z7aA7NCaFISWvmfASP3svnmOqnWvt1sFVT/mrAcCAhtmsKseGogHFzXo1Viz2Qz4mE84HSF+GdgMXRuH/fBbi0PkesYpXjx5KMiq01cpTm6BTd1V/9rs74Nnz0qxj4CMgQjpAZR2rROFcfNP4QuZC5d041ASWfHJTgOIGR4aLb07QipA6nXFoXX2VTtKLZ1Oj/cQt/XWkiQTgW9B9JooDeV8A8bXRohqSdOU3Nlz5XMayJTQhA7Bo4JMC9k3mHZ1YgUOAX3nR+jPrKXUC50kzhRlcf8si3QY6kPzVaN0T6arqluvLecvE5EgKM6ESe+4UOZ+WxxnxxbYFPTU8+iimtIz2pQEvmdY6DXoYQjHCBUcT1YOYX3K4h+9yR1w30iB4HGeBw2ojhTSiKeDS72yhpu3OsWOOnxYQcnQy325riu2NeL01d40X1XyQ0vkMj67c2F6MCs9iRZroS/2UhihKE2jn9acPnTxeXNqNRSYYsYlAv0sjIgtCtk+WTg9MP9No0gT9NpoaQ9kHoh+X5UW8jO+Hs8QgyvJDRC6TWtQqwrn759g8YunVrrBEbgXm7i5OwZ32cQbvbiEQhJ5kGB1+/DmS51/U7tRG6ooxaHBNYoicV9WwAioN8mj+wvgQAnzz8SMcIQLmr8CXbcxFpBsLKOgL+sUXNIzZopmSl+Kg0UNlQtN+ZBcNKG772dVpIaXSeF5O0crtlu72DiTvPS8hyu47kRotoFuPaqkqUaLPMYPA0RLLNEbsnSsR7FgaJWcYVfo6Suxjki72KhkX2xrY9mH82wkF4yzEZBRDXezEYWWf8/UnlfJRM72XFmtdcXjT04afUJqk74ZALtLdUI/NF6lQCX3SbsUIr6RS5BJgXevGTbtmOhEoGuJcOns7xPToh863oVeJjE7TAm7JVF175VYh7eqF/UuQMoZhCgYKKeBcgfleMpGrlQJ4CQX4fm9uGNbqcGo+guRbkdivrzkzVDpaudfxOhSjT5E8/42dL16rWtyN6V8bPyszrSzWHeeiBNX8r3+AXlPmeG9ocUA9BGHAAAA485/E/wE351jB5lEKC7T3IjvU2B9AFWsKCv0BKaR4f1DOqchJ7jEMvzwmHGCHP/oFZNzOuzDY+pcS1sm19BcJvSq0emShdHi65FEoQJoAAAAAAA== 2x"
+                  src="data:image/webp;base64,UklGRgQEAABXRUJQVlA4WAoAAAAQAAAAMQAAMQAAQUxQSOYAAAABgFBbb97mgyAGFZOGic1gYZAxUBkYQiAYgiAIgiFov4n9lUBETAAmajWPkZnRrSjWy2fkzTBds/Wc2nSenjm96aR95MIoU1652O6J53KXG+JJ6HLNk9IvvZLULtSk3f/R4Bn6V0vi8w9N6u1X4+oANMkFMLYDCLaAJv2j8hXjs87nwRfJP97gLccbBF84Xzc+q3xF+RTBFsDBZoCwKYDO1QBg49JfOJka/tTBE/oXdp6C/43FcNU5HJfFGVyuQXydC27bKsPMGivGB+Zqm3cqpmub059YqhZ34hCs12o9MnOEW3lgIlZQOCD4AgAAUBAAnQEqMgAyAD6RQJpIpaOioS4UmciwEglsAK5PnL7cjGq/4rdozSWBvWdt8fMZ+wH6Z+755zm+vegB0w0+3Y1oT7hGIGv2l/b5gZC65fnHxtHCpFYsu9qVWBFE4tp55dxd5pmGyr/Oi9YIkirWtnaoj82P2P95VsjZJH2LF+2dobArSks6cDxGAAD+w135onUcGPeW6es3hOYv5UjUTjDsbo/eMIto2YVBhuHwGRuzmdg9tcPXsttlTdNeh5npVpzdZ67dhNYrnF1bvaMgZHjDls73xyVRkdeWyWKYB5BbudcZU/WRk16RkwPF9e0oAToNqKbs7yHC2IAswBeJ6xwhl8m+Y3v0n1Qt6O4XN31lxBHnTCTEuivqC8zP8+YUNm0uzheDN/CjC0si2VAFfzUl4gOW7uL7nOHRHM//Hc25/NjfFY3LF6/zl3//94cwca2CC2JExUAs55J6trztUMxHASJljnW39y6X3tsnjf66qomKUDFZajQ6zgl+lGJa6fn8Wwe39aC2tfSAuxLj1tY0XJkIal7fv4gOIt0xqcwKfbG7p1oxrXKx4/N5rA6CdDR6dQD/svPZJuxlqN4Z/O6BDR/mbmAbFCmgSHq1WjFhJ9o7KAcs5Z7eP+PO9oy0jMbV2DPjgLYvZARWGFVnUXuwiDvjU9NO5iHTP7a8ynom2LbMGXKYtzhn45iroi27ZgvvGD0QPQySQtqjwb2xuFc9Gjw8zVtbsIUwzNLvItIwCyDZpX9AE16GhotLvNqlRuhLi8GK09aPEPlti9wegbNZdjHjoL3l39jSrD2u04f5nVutPJSWTypperrpjra4zw///MteTYatms+dgTjgTpj4SVpIFkvizodIRmMa4NO654XIhhj/6Av7//+pQ2+w7L+rPTn9OKmTgdzFVCUUKfulH//4k7NJ9q7RcIt3cV23nnO+zWgh1tx8sCjKsSusQaA9HMw4dCUrw/4zn/+2LB4/+6J4I1Y+RyLhlBjKZw+MjzAAAAAAAA=="
+                  alt="Photo of client Victoria"
+                  width="50"
+                  height="50"
+                />
+              </div>
+              <div class="reviews-client-caption">
+                <h3 class="reviews-client-name">Victoria</h3>
+                <div class="reviews-client-status">Student</div>
+              </div>
+            </div>
+            <p class="reviews-comment">
+              I love the dynamic and interactive teaching methods used here.
+              It's a great place to learn English in a fun and effective way. I
+              have definitely seen a big improvement in my language skills.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 

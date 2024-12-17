@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"mappings":";ysDAAA,OAAO,qCAAqB","names":[],"ignoreList":[],"sources":["../src/main.js"],"sourcesContent":["import('./js/reviews-swiper');\n"],"file":"index.js"}
