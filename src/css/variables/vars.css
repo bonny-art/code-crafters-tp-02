@@ -1,0 +1,28 @@
+:root {
+  scroll-behavior: smooth;
+
+  /* Colors */
+  --cl-black: 18, 20, 23; /* #121417 */
+  --cl-green: 77, 194, 116; /* #4dc274 */
+  --cl-light-green: 212, 253, 225; /* #d4fde1 */
+  --cl-gray: 248, 249, 250; /* #f8f9fa */
+  --cl-white: 255, 255, 255; /* #ffffff */
+  --cl-red: 220, 53, 69; /* #dc3545 */
+  --cl-green-linear: linear-gradient(
+    85deg,
+    rgb(var(--cl-green)) 2.25%,
+    #bee8cc 131.25%
+  );
+
+  /* Sizes */
+  --indent-col: 32px;
+  --indent-row: var(--indent-col);
+  --items: 2;
+
+  /* Position */
+  --header-depth: 10;
+  --backdrop-depth: 11;
+
+  /* Transitions */
+  --fast-trns: 300ms ease;
+}

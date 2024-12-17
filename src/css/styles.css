@@ -4,15 +4,32 @@
   | default @import url()
   |============================
 */
+
+/* Variables styles */
+@import url('./variables/vars.css');
+
+/* Utils styles */
+@import url('./utils/animations.css');
+
 /* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+@import url('./common/reset.css');
+@import url('./common/base.css');
+@import url('./common/typography.css');
+@import url('./common/container.css');
+@import url('./common/card-set.css');
 
 /* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+@import url('./components/header.css');
+@import url('./components/hero.css');
+@import url('./components/about.css');
+@import url('./components/lessons.css');
+@import url('./components/advantages.css');
+@import url('./components/teachers.css');
+@import url('./components/contact.css');
+@import url('./components/reviews.css');
+@import url('./components/footer.css');
+@import url('./components/mobile-menu.css');
+
+/* Components styles */
+@import url('./components/socials.css');
+@import url('./components/nav.css');

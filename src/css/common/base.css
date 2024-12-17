@@ -1,0 +1,94 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+
+  font-family: Manrope;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: rgb(var(--cl-black));
+  background-color: rgb(var(--cl-white));
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+main {
+  flex-grow: 1;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section {
+    padding: 75px 0;
+  }
+}
+
+.section-title {
+  max-width: 335px;
+
+  text-align: center;
+  font-size: 32px;
+  line-height: 1.13;
+  letter-spacing: -0.02em;
+
+  color: rgb(var(--cl-black));
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    max-width: 100%;
+
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-title {
+    max-width: 832px;
+    margin: 0 auto;
+  }
+}
+
+.section-title-accent {
+  position: relative;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.section-title-accent::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  height: 12px;
+  z-index: -1;
+
+  border-radius: 8px;
+  background: rgb(var(--cl-light-green));
+}
+
+@media screen and (min-width: 768px) {
+  .section-title-accent::after {
+    height: 20px;
+  }
+}
