@@ -9,6 +9,13 @@
     margin: 40px auto;
   }
 
+  .container {
+    @media only screen and (min-width: 1280px) {
+      padding-left: 64px;
+      padding-right: 64px;
+    }
+  }
+
   .content {
     padding: 64px 64px 142px;
     background: var(--cl-green-linear);
