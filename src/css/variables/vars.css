@@ -6,6 +6,7 @@
   --cl-green: 77, 194, 116; /* #4dc274 */
   --cl-light-green: 212, 253, 225; /* #d4fde1 */
   --cl-gray: 248, 249, 250; /* #f8f9fa */
+  --cl-bg-gray: 243, 245, 246; /* #f3f5f6 */
   --cl-white: 255, 255, 255; /* #ffffff */
   --cl-red: 220, 53, 69; /* #dc3545 */
   --cl-green-linear: linear-gradient(
