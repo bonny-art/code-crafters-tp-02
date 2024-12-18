@@ -1,72 +1,78 @@
 .lessons {
-  background-color: rgb(var(--cl-white));
-  padding: 16px;
-
   .lessons-card {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    justify-content: space-between;
+    gap: 32px;
   }
 
   .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 24px;
-    border: 1px solid rgb(var(--cl-green));;
+    padding: 32px 16px;
+    border: 1px solid rgb(var(--cl-green));
     border-radius: 12px;
     color: #121417;
     text-align: center;
   }
 
   .card h3 {
-    font-size: 18px;
-    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 16px;
   }
 
   .card span {
-    font-size: 28px;
-    margin-bottom: 12px;
-    font-weight: bold;
+    display: inline-block;
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+    font-weight: 700;
   }
 
   .card p {
-    font-size: 14px;
-    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 32px;
     color: rgba(18, 20, 23, 0.5);
   }
 
   .card a {
     display: inline-block;
-    padding: 12px;
-    font-size: 16px;
+    padding: 16px;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 700;
     color: #fff;
-    background-color: rgb(var(--cl-green));;
+    background-color: rgb(var(--cl-green));
     border-radius: 8px;
     text-decoration: none;
     transition: background-color 0.3s;
+    border: 1px solid rgb(var(--cl-green));
   }
 
   .card a:hover {
-    background-color: #3aa65b;
+    background-color: #d9f7e0;
+    color: rgb(var(--cl-green));
   }
 
   .standard-card {
-    background-color: rgb(var(--cl-green));;
+    background-color: rgb(var(--cl-green));
     color: #fff;
   }
 
   .standard-card p {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.7);
   }
 
   .standard-card a {
-    background-color: #fff;
-    color: rgb(var(--cl-green));;
+    border-color: rgba(255, 255, 255, 0.4);
   }
 
   .standard-card a:hover {
     background-color: #d9f7e0;
+    color: rgb(var(--cl-green));
   }
 
   /* Tablet (768px and above) */
@@ -77,18 +83,20 @@
     }
 
     .card {
-      max-width: calc(50% - 8px);
+      max-width: 336px;
     }
   }
 
-  /* Desktop (1200px and above) */
+  /* Desktop (1280px and above) */
   @media (min-width: 1280px) {
     .lessons-card {
       justify-content: space-between;
     }
 
     .card {
-      max-width: calc(33.33% - 16px);
+      max-width: 320px;
+      width: 100%;
+      padding: 32px;
     }
   }
 }
