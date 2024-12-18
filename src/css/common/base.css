@@ -50,7 +50,6 @@ main {
   letter-spacing: -0.02em;
 
   color: rgb(var(--cl-black));
-  background-color: transparent;
 }
 
 @media screen and (min-width: 768px) {
@@ -71,14 +70,13 @@ main {
 
 .section-title-accent {
   position: relative;
-  background-color: transparent;
   z-index: 1;
 }
 
 .section-title-accent::after {
   content: '';
   position: absolute;
-  bottom: 4px;
+  bottom: 2px;
   left: 0;
   right: 0;
   height: 12px;
@@ -90,6 +88,7 @@ main {
 
 @media screen and (min-width: 768px) {
   .section-title-accent::after {
+    bottom: 0;
     height: 20px;
   }
 }
