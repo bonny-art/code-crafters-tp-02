@@ -1,6 +1,15 @@
 .advantages {
+  margin: 75px auto;
+
+  @media only screen and (max-width: 1279px) {
+    margin: 50px auto;
+  }
+
+  @media only screen and (max-width: 767px) {
+    margin: 40px auto;
+  }
+
   .content {
-    margin: 100px auto;
     padding: 64px 64px 142px;
     background: var(--cl-green-linear);
     border-radius: 30px;
@@ -160,7 +169,7 @@
         background: rgb(var(--cl-light-green));
         border-radius: 30px;
         z-index: 2;
-        transform: rotate(-6deg);
+        animation: advantages-wave 15s infinite;
       }
 
       &::after {
@@ -173,7 +182,7 @@
         background: rgba(var(--cl-white), 0.5);
         border-radius: 30px;
         z-index: 1;
-        transform: rotate(6deg);
+        animation: advantages-wave-reverse 15s infinite;
       }
     }
   }
