@@ -9,7 +9,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
 
-  color: rgb(var(--cl-black));
+  color: rgb(var(--cl-black), 50%);
   background-color: rgb(var(--cl-white));
 }
 
@@ -42,6 +42,7 @@ main {
 
 .section-title {
   max-width: 335px;
+  margin-bottom: 16px;
 
   text-align: center;
   font-size: 32px;
@@ -49,7 +50,6 @@ main {
   letter-spacing: -0.02em;
 
   color: rgb(var(--cl-black));
-  background-color: transparent;
 }
 
 @media screen and (min-width: 768px) {
@@ -64,31 +64,31 @@ main {
 @media screen and (min-width: 1280px) {
   .section-title {
     max-width: 832px;
-    margin: 0 auto;
+    margin: 0 auto 16px;
   }
 }
 
 .section-title-accent {
   position: relative;
-  background-color: transparent;
   z-index: 1;
 }
 
 .section-title-accent::after {
   content: '';
   position: absolute;
-  bottom: 4px;
+  bottom: 2px;
   left: 0;
   right: 0;
   height: 12px;
   z-index: -1;
 
   border-radius: 8px;
-  background: rgb(var(--cl-light-green));
+  background: rgb(var(--cl-light-green-accent));
 }
 
 @media screen and (min-width: 768px) {
   .section-title-accent::after {
+    bottom: 0;
     height: 20px;
   }
 }

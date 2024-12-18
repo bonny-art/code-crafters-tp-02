@@ -1,0 +1,19 @@
+@keyframes advantages-wave {
+  0%,
+  100% {
+    transform: rotate(var(--advantages-wave-angle));
+  }
+  50% {
+    transform: rotate(calc(var(--advantages-wave-angle) * -1));
+  }
+}
+
+@keyframes advantages-wave-reverse {
+  0%,
+  100% {
+    transform: rotate(var(--advantages-wave-angle-reverse));
+  }
+  50% {
+    transform: rotate(calc(var(--advantages-wave-angle-reverse) * -1));
+  }
+}

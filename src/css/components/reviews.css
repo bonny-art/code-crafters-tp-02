@@ -1,3 +1,143 @@
 .reviews {
-  background-color: cornflowerblue;
+  padding-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews {
+    padding-bottom: 150px;
+  }
+}
+
+.reviews-container {
+  overflow-x: hidden;
+}
+
+.reviews-descr {
+  margin: 0 auto 40px;
+
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-descr {
+    width: 647px;
+    margin: 0 auto 64px;
+  }
+}
+
+.reviews-swiper-container {
+  width: 100%;
+}
+
+.reviews-swiper-wrapper {
+  display: flex;
+}
+
+.reviews-swiper-slide {
+  min-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-swiper-slide {
+    min-width: calc((100% - 32px) / 2);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews-swiper-slide {
+    min-width: calc((100% - 64px) / 3);
+  }
+}
+
+.reviews-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  height: 278px;
+  padding: 20px 20px 40px;
+
+  border-radius: 16px;
+  background: rgb(var(--cl-bg-gray));
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-card {
+    gap: 32px;
+
+    height: 326px;
+    padding: 32px 16px 40px;
+
+    border-radius: 30px;
+  }
+}
+
+.reviews-client-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 14px;
+
+  border-radius: 8px;
+  background: rgb(var(--cl-green));
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-client-box {
+    padding: 14px 16px;
+
+    border-radius: 15px;
+  }
+}
+
+.reviews-client-photo-box {
+  border-radius: 50%;
+}
+
+.reviews-client-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.reviews-client-name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+
+  color: rgb(var(--cl-white));
+}
+
+.reviews-client-status {
+  font-size: 12px;
+  line-height: 1.33;
+
+  color: rgb(var(--cl-white), 50%);
+}
+
+.reviews-comment-box {
+  max-height: 100%;
+  padding: 0 14px;
+  overflow-y: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-comment-box {
+    padding: 0 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-comment {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
