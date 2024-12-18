@@ -14,9 +14,6 @@
   }
 }
 
-.reviews {
-}
-
 .reviews-container {
   overflow-x: hidden;
 }
@@ -104,9 +101,6 @@
   border-radius: 50%;
 }
 
-.reviews-client-photo {
-}
-
 .reviews-client-caption {
   display: flex;
   flex-direction: column;
@@ -139,9 +133,6 @@
   .reviews-comment-box {
     padding: 0 16px;
   }
-}
-
-.reviews-comment {
 }
 
 @media screen and (min-width: 768px) {
