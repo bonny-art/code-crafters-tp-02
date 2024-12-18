@@ -21,7 +21,7 @@
     }
 
     p {
-      color: rgba(18, 20, 23, 0.5);
+      color: rgba(var(--cl-black), 0.5);
     }
 
     a {
