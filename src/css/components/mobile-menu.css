@@ -1,3 +1,85 @@
+/* General styles for the mobile menu backdrop */
+.backdrope {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+/* Mobile menu container */
 .mobile-menu {
-  background-color: crimson;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 240px; /* Fixed width */
+  height: 812px; /* Fixed height */
+  background-color: #35c17e; /* Green background color */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1001;
+}
+
+/* Close button */
+.mobile-menu-close {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.mobile-menu-close svg {
+  color: white;
+  width: 24px;
+  height: 24px;
+}
+
+/* Navigation styles */
+.mobile-menu-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 20px 20px 20px; /* Add padding to top and sides */
+  flex: 1;
+}
+
+.mobile-menu-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+.mobile-menu-nav-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  align-self: center;
+}
+
+/* Social media icons */
+.mobile-menu-social {
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mobile-menu-social-link svg {
+  color: white;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu-social-link:hover svg {
+  transform: scale(1.1);
 }
