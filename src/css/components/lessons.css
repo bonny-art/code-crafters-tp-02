@@ -82,7 +82,7 @@
   }
 
   /* Desktop (1200px and above) */
-  @media (min-width: 1200px) {
+  @media (min-width: 1280px) {
     .lessons-card {
       justify-content: space-between;
     }
