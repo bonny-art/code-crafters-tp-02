@@ -37,11 +37,17 @@
             Leave an application
           </a>
           <div class="image">
-            <img srcset="../public/books.webp 1x,../public/books@2x.webp 2x"
-                 src="../public/books.webp"
-                 alt="Stack of books"
-                 width="214"
-                 height="263">
+            <picture>
+              <source
+                srcset="../public/books.webp 1x, ../public/books@2x.webp 2x"
+                media="(min-width: 768px)">
+              <img
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                alt="Stack of books"
+                width="214"
+                height="263"
+                loading="lazy">
+            </picture>
           </div>
         </div>
       </div>
