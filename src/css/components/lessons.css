@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid rgb(var(--cl-green));
-    border-radius: 12px;
+    border-radius: 16px;
     color: #121417;
     text-align: center;
 
@@ -30,15 +30,14 @@
       font-weight: 700;
       color: rgba(var(--cl-white));
       background-color: rgb(var(--cl-green));
-      border-radius: 8px;
+      border-radius: 12px;
       text-decoration: none;
       transition: background-color 0.3s;
       border: 1px solid rgb(var(--cl-green));
     }
 
     a:hover {
-      background-color: #d9f7e0;
-      color: rgb(var(--cl-green));
+      background-color: rgb(var(--cl-green-hover));
     }
 
     span {
@@ -62,7 +61,7 @@
   }
 
   .standard-card a:hover {
-    background-color: #d9f7e0;
+    background-color: rgb(var(--cl-white));
     color: rgb(var(--cl-green));
   }
 
@@ -75,6 +74,7 @@
       max-width: 336px;
       width: 100%;
       padding: 32px 16px;
+      border-radius: 30px;
 
       p {
         font-size: 16px;
@@ -94,7 +94,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .lessons-card {
       gap: 20px;
       flex-direction: column;
