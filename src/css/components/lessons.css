@@ -1,3 +1,52 @@
 .lessons {
   background-color: rgb(var(--cl-white));
+
+  .lesons-card {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -16px;
+      padding-top: 64px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 16px;
+    padding: 32px;
+    color: #121417;
+    border: 1px solid #4DC274;
+    border-radius: 12px;
+
+    h3 {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+
+    span {
+      font-size: 32px;
+      line-height: 44px;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 16px;
+      color: #12141780;
+    }
+
+    a {
+      display: block;
+      font-size: 18px;
+      padding: 16px;
+      color: #fff;
+      background-color: #4DC274;
+      border-radius: 12px;
+    }
+  }
 }
