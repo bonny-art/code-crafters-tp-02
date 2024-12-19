@@ -1,3 +1,32 @@
 .header {
-  background-color: rgb(var(--cl-green));
+  /* background-color: rgb(var(--cl-green)); */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  color: rgb(var(--cl-black));
+}
+.header-logo .logo-accent {
+  color: rgb(var(--cl-green));
+}
+
+.socials {
+  width: 156px;
+  height: 44px;
+}
+
+.header-socials {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .header-socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
