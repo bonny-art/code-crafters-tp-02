@@ -1,3 +1,131 @@
 .lessons {
-  background-color: rgb(var(--cl-white));
+  .lessons-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgb(var(--cl-green));
+    border-radius: 16px;
+    color: #121417;
+    text-align: center;
+
+    h3 {
+      font-size: 20px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    p {
+      color: rgba(var(--cl-black), 0.5);
+    }
+
+    a {
+      display: inline-block;
+      padding: 16px;
+      font-weight: 700;
+      color: rgba(var(--cl-white));
+      background-color: rgb(var(--cl-green));
+      border-radius: 12px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      border: 1px solid rgb(var(--cl-green));
+    }
+
+    a:hover {
+      background-color: rgb(var(--cl-green-hover));
+    }
+
+    span {
+      display: inline-block;
+      font-size: 32px;
+      font-weight: 700;
+    }
+  }
+
+  .standard-card {
+    background-color: rgb(var(--cl-green));
+    color: rgb(var(--cl-white));
+  }
+
+  .standard-card p {
+    color: rgba(var(--cl-white), 0.7);
+  }
+
+  .standard-card a {
+    border-color: rgba(var(--cl-white), 0.4);
+  }
+
+  .standard-card a:hover {
+    background-color: rgb(var(--cl-white));
+    color: rgb(var(--cl-green));
+  }
+
+  @media screen and (min-width: 768px) {
+    .lessons-card {
+      gap: 32px;
+    }
+
+    .card {
+      max-width: 336px;
+      width: 100%;
+      padding: 32px 16px;
+      border-radius: 30px;
+
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 32px;
+      }
+
+      span {
+        line-height: 1.375;
+        margin-bottom: 32px;
+      }
+
+      a {
+        font-size: 18px;
+        line-height: 1.55;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .lessons-card {
+      gap: 20px;
+      flex-direction: column;
+    }
+
+    .card {
+      padding: 40px 20px;
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      span {
+        line-height: 1.125;
+        margin-bottom: 40px;
+      }
+
+      a {
+        padding: 14px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    .card {
+      max-width: 320px;
+      padding: 32px;
+
+      span {
+        margin-bottom: 16px;
+      }
+    }
+  }
 }
