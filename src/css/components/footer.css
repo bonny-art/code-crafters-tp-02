@@ -31,18 +31,41 @@ hr {
   gap: 17px;
 }
 
+.footer-adress-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
 .footer-address-text {
   color: rgba(255, 255, 255, 0.6);
   line-height: 18px;
-  letter-spacing: -1px;
+  letter-spacing: -2%;
+  font-size: 14px;
+}
+
+.footer-adress-link {
+  font-family: Manrope, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
 }
 
 .footer-logo {
+  display: block;
   margin-bottom: 31px;
 }
 
 .logo-accent {
   color: #4dc274
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
 }
 
 .footer-socials-list {
