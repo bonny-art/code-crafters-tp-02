@@ -31,4 +31,8 @@
 
   /* Transitions */
   --fast-trns: 300ms ease;
+
+  /* Font Weights */
+  --weight-regular: 400;
+  --weight-medium-bold: 600;
 }
