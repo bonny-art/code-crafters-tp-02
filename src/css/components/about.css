@@ -1,3 +1,129 @@
-.about {
-  background-color: rgb(var(--cl-gray));
+.about-description {
+  text-align: center;
+  max-width: 658px;
+  margin: auto;
+}
+
+.about-grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'about1'
+    'about2'
+    'about3'
+    'about4'
+    'about-image';
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-grid-container {
+    gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'about1 about2'
+      'about3 about4'
+      'about-image about-image';
+    margin-top: 64px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .about-grid-container {
+    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'about1 about2 about-image'
+      'about3 about4 about-image';
+    margin-top: 64px;
+  }
+}
+
+.about-item {
+  border-radius: 16px;
+  background: rgba(var(--cl-bg-gray));
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 160px;
+  margin: 0;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-item {
+    border-radius: 30px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .about-item {
+    width: 325px;
+  }
+}
+
+.about-1 {
+  grid-area: about1;
+}
+.about-2 {
+  grid-area: about2;
+}
+.about-3 {
+  grid-area: about3;
+}
+.about-4 {
+  grid-area: about4;
+}
+
+.about-item-title {
+  color: rgb(var(--cl-green));
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+
+  margin-bottom: 16px;
+}
+
+.about-item-description {
+  color: rgba(var(--cl-black));
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.about-image {
+  grid-area: about-image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 313px;
+  padding: 0;
+  background-color: rgb(var(--cl-green));
+}
+
+@media only screen and (min-width: 768px) {
+  .about-image {
+    width: 100%;
+    height: 243px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .about-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
 }
