@@ -1,5 +1,140 @@
 <section class="contact">
   <div class="container">
-    <p>contact</p>
+    <h2 class="section-title">
+      Leave an <span class="section-title-accent">application</span>
+    </h2>
+    <p class="contact-description">
+      Please use the form below to contact us. Enter your name, email, and
+      message and we'll get back to you shortly.
+    </p>
+    <div class="contact-wrapper">
+      <div class="contact-card">
+        <img
+          class="about-list-item-img"
+          srcset="
+            ../img/contact-section/contact-section-img.png    1x,
+            ../img/contact-section/contact-section-img@2x.png 2x
+          "
+          src="../img/contact-section/contact-section-img.png"
+          alt="Smiling girl"
+          loading="lazy"
+        />
+        <h3 class="contact-card-description-title">1000</h3>
+        <p class="contact-card-dascription-text">
+          of our online English language lessons! This journey has been full of
+          discovery, growth and unforgettable moments, and we are happy to share
+          this joyful event with you.
+        </p>
+      </div>
+      <div class="contact-form-wrapper">
+        <form class="contact-form" name="contact-form">
+          <div class="contact-form-field">
+            <label class="contact-form-label" for="user-name"></label>
+
+            <input
+              class="contact-form-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              minlength="3"
+              placeholder="Name"
+              required
+            />
+          </div>
+
+          <div class="contact-form-field">
+            <label class="contact-form-label" for="user-email"> </label>
+
+            <input
+              class="contact-form-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          <div class="contact-form-field">
+            <label class="contact-form-label" for="user-phone"> </label>
+
+            <input
+              class="contact-form-input"
+              type="tel"
+              name="user-phone"
+              id="user-phone"
+              placeholder="Phone"
+              pattern="\+38 \(0\d{2}\) \d{3} \d{2} \d{2}"
+              title="Please follow next format +38 (099) 123 45 67"
+            />
+          </div>
+
+          <div class="contact-form-field text-area">
+            <label class="contact-form-label" for="user-comment"></label>
+            <textarea
+              class="modal-form-message"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Comment"
+              required
+              minlength="10"
+              maxlength="1000"
+            ></textarea>
+          </div>
+
+          <div class="contact-form-field radio-buttons">
+            <label class="contact-form-label">Choose a teacher:</label>
+            <div class="radio-options">
+              <label>
+                <input
+                  class="contact-form-input"
+                  type="radio"
+                  name="user-preferences"
+                  value="Maria"
+                />
+                Maria
+              </label>
+              <label>
+                <input
+                  class="contact-form-input"
+                  type="radio"
+                  name="user-preferences"
+                  value="Artem"
+                />
+                Artem
+              </label>
+              <label>
+                <input
+                  class="contact-form-input"
+                  type="radio"
+                  name="user-preferences"
+                  value="Ilona"
+                />
+                Ilona
+              </label>
+              <label>
+                <input
+                  class="contact-form-input"
+                  type="radio"
+                  name="user-preferences"
+                  value="Volodymyr"
+                />
+                Volodymyr
+              </label>
+            </div>
+          </div>
+
+          <button class="cta-button" type="submit">Send</button>
+          <p class="contact-form-privacy-policy-text">
+            By clicking on 'Send' button, you agree to our
+            <span
+              ><a href="https://example.com" class="privacy-policy-link"
+                >Privacy Policy</a
+              > </span
+            >, and allow Promodo to use this information for marketing purposes.
+          </p>
+        </form>
+      </div>
+    </div>
   </div>
 </section>
