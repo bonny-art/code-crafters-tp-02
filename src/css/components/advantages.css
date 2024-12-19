@@ -18,16 +18,6 @@
 }
 
 .advantages {
-  margin: 75px auto;
-
-  @media only screen and (max-width: 1279px) {
-    margin: 50px auto;
-  }
-
-  @media only screen and (max-width: 767px) {
-    margin: 40px auto;
-  }
-
   .container {
     @media only screen and (min-width: 1280px) {
       padding-left: 64px;
