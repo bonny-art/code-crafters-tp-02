@@ -1,5 +1,6 @@
 /* General styles for the mobile menu backdrop */
 .backdrope {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -7,6 +8,8 @@
   height: 100%;
   background-color: rgba(var(--cl-black), 0.5);
   z-index: 1000;
+  transition: transform 0.9s ease-in-out;
+
 }
 
 /* Mobile menu container */
@@ -17,7 +20,9 @@
   width: 240px; 
   height: 100vh; 
   background-color: rgb(var(--cl-green)); 
+  transform: translateX(100%);
   z-index: 1001;
+  transition: transform 0.9s ease-in-out;
 }
 
 .mobile-menu-container{
