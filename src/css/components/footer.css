@@ -1,9 +1,6 @@
-hr {
-  display: block;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 0;
-    margin: 0;
-    align-self: stretch;
+.line {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
 }
 
 .footer {
@@ -50,12 +47,16 @@ hr {
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: 0;
+  letter-spacing: 0%;
 }
 
 .footer-logo {
   display: block;
   margin-bottom: 31px;
+
+  font-family: Manrope, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .logo-accent {
@@ -65,7 +66,16 @@ hr {
 .footer-nav-list {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 22px;
+}
+
+.footer-nav-item {
+  font-family: Manrope, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0%;
 }
 
 .footer-socials-list {
@@ -96,10 +106,22 @@ hr {
 .footer-box-policy {
   text-align: center;
   padding: 23px 0;
+  color: rgba(255, 255, 255, 0.6);
+
+  font-family: Manrope, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -2%;
+
 }
 
 .footer-box-policy {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.policy {
+  margin-right: 18px;
 }
