@@ -74,16 +74,22 @@
 /* Social media icons */
 .mobile-menu-social {
   list-style: none;
-  padding: 20px;
+  padding: 20px 45px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  gap: 12px;
 }
 
+
 .mobile-menu-social-link svg {
-  color: rgb(var(--cl-white));
-  width: 24px;
-  height: 24px;
+  fill: rgb(var(--cl-white));
+  border: 1px solid rgba(var(--cl-white), 0.1);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+
   transition: transform 0.3s ease-in-out;
 }
 
