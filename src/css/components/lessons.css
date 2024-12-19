@@ -111,6 +111,10 @@
         line-height: 1.125;
         margin-bottom: 40px;
       }
+
+      a {
+        padding: 14px;
+      }
     }
   }
 
