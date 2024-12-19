@@ -14,9 +14,9 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 240px; /* Fixed width */
-  height: 812px; /* Fixed height */
-  background-color: #35c17e; /* Green background color */
+  width: 240px; 
+  height: 812px; 
+  background-color: #35c17e; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
