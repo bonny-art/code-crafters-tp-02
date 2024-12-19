@@ -1,10 +1,10 @@
 .line {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(var(--cl-white), 0.1);
   width: 100%;
 }
 
 .footer {
-  background-color: #121417;
+  background-color: rgb(var(--cl-black));
   color: white;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .footer-address-text {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(var(--cl-white), 0.6);
   line-height: 18px;
   letter-spacing: -2%;
   font-size: 14px;
@@ -75,7 +75,7 @@
 }
 
 .logo-accent {
-  color: #4dc274
+  color: rgb(var(--cl-green))
 }
 
 .footer-nav-list {
@@ -115,7 +115,7 @@
 }
 
 .socials-item {
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(var(--cl-white), 0.1);
   border-radius: 10px;
   height: fit-content;
 }
@@ -127,7 +127,7 @@
 .footer-box-policy {
   text-align: center;
   padding: 23px 0;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(var(--cl-white), 0.6);
 
   font-family: Manrope, sans-serif;
   font-weight: 400;
