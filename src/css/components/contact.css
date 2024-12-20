@@ -12,6 +12,7 @@
   text-align: center;
   margin: 0 auto;
   margin-bottom: 16px;
+  color: rgb(var(--cl-black));
 }
 
 @media only screen and (min-width: 768px) {
@@ -38,7 +39,7 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  width: 492px;
+  max-width: 492px;
   background: rgb(var(--cl-green));
   padding-bottom: 40px;
   border-radius: 30px;
@@ -68,14 +69,8 @@
 }
 .contact-form-label {
   color: rgb(var(--cl-black));
-
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1.33;
-  letter-spacing: -0.02em;
-  margin-bottom: 14px;
 }
+
 .contact-form-input,
 .contact-form-message {
   width: 100%;
@@ -84,6 +79,12 @@
   border-radius: 12px;
   border: 1px solid rgba(18, 20, 23, 0.1);
 }
+
+.contact-form-input::placeholder,
+.contact-form-message::placeholder {
+  color: rgb(var(--cl-black));
+}
+
 .text-area {
 }
 .contact-form-message {
@@ -94,8 +95,7 @@
 .contact-form-radio-buttons {
   display: flex;
   flex-direction: column;
-
-  gap: 8px;
+  gap: 14px;
 }
 
 .contact-form-options-title {
@@ -124,12 +124,7 @@
   }
 }
 
-.contact-form-label {
-}
-
-.contact-form-label {
-  color: rgb(var(--cl-black));
-  text-align: center;
+.radio-options-item .contact-form-label {
   font-size: 14px;
   font-style: normal;
   font-weight: var(--weight-regular);
@@ -139,12 +134,32 @@
 
 .contact-form-input-radio-btn {
   accent-color: rgb(var(--cl-green));
-  margin-right: 8px;
+  margin-right: 3px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
 .cta-button {
+  display: inline-flex;
+  padding: 14px 150px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: rgb(var(--cl-green));
+  border: none;
+  margin-top: 24px;
+  color: white;
 }
 .contact-form-privacy-policy-text {
+  font-size: 12px;
+  line-height: 1.33;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
 }
 .privacy-policy-link {
+  text-decoration-line: underline;
 }
