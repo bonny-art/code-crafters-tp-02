@@ -19,6 +19,7 @@
   .contact-description {
     width: 709px;
     margin-bottom: 64px;
+    color: inherit;
   }
 }
 
@@ -60,11 +61,20 @@
 }
 .contact-form-wrapper {
 }
+
+@media only screen and (min-width: 768px) {
+  .contact-form-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
 .contact-form {
   display: inline-flex;
   flex-direction: column;
   gap: 16px;
 }
+
 .contact-form-field {
 }
 .contact-form-label {
@@ -114,14 +124,17 @@
 
 @media only screen and (min-width: 768px) {
   .radio-options {
+    gap: 16px;
     flex-direction: row;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .radio-options {
-    gap: 16px;
   }
+}
+
+.radio-options-item {
 }
 
 .radio-options-item .contact-form-label {
@@ -130,6 +143,8 @@
   font-weight: var(--weight-regular);
   line-height: 1.74;
   letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
 }
 
 .contact-form-input-radio-btn {
@@ -138,6 +153,7 @@
   width: 18px;
   height: 18px;
   flex-shrink: 0;
+  margin-right: 8px;
 }
 
 .cta-button {
@@ -151,6 +167,16 @@
   margin-top: 24px;
   color: white;
 }
+
+@media only screen and (min-width: 768px) {
+  .cta-button {
+    width: 500px;
+    padding: 16px 228px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .contact-form-privacy-policy-text {
   font-size: 12px;
   line-height: 1.33;
@@ -160,6 +186,15 @@
   text-underline-offset: auto;
   text-underline-position: from-font;
 }
+
+@media only screen and (min-width: 768px) {
+  .contact-form-privacy-policy-text {
+    font-size: 14px;
+    font-weight: var(--weight-regular);
+    line-height: 1.71;
+  }
+}
+
 .privacy-policy-link {
   text-decoration-line: underline;
 }
