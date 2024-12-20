@@ -1,8 +1,42 @@
 .teachers {
   background-image: var(--cl-white);
   height: auto;
+  gap: 80px;
+
+  h2 {
+    width: 336px;
+    color: #121417;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 112.5% */
+    letter-spacing: -0.64px;
+    margin-top: 80px;
+    margin-bottom: 16px;
+  }
+
+  p {
+    width: 334px;
+    color: rgba(18, 20, 23, 0.5);
+    text-align: center;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
 }
 .teacher-list {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  width: 375px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
 }
 
 .teacher-card {
@@ -24,9 +58,23 @@
     letter-spacing: -0.4px;
   }
 
+  p {
+    width: 335px;
+    height: 75px;
+    flex-shrink: 0;
+    color: rgba(18, 20, 23, 0.5);
+    text-align: center;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
   img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
     border-radius: 50%;
     margin-bottom: 15px;
   }
