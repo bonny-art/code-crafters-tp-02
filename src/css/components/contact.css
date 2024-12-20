@@ -46,6 +46,10 @@
   border-radius: 30px;
 }
 
+.contact-card img {
+  border-radius: 30px;
+}
+
 @media only screen and (max-width: 1279px) {
   .contact-card {
     display: none;
@@ -54,10 +58,22 @@
 
 .about-list-item-img {
 }
+
 .contact-card-description-title {
+  color: rgb(var(--cl-white));
+  font-size: 40px;
+  font-weight: var(--weight-bold);
+  line-height: 1.2;
+  letter-spacing: -0.8px;
 }
+
 .contact-card-dascription-text {
-  padding: 20px;
+  padding: 0 20px;
+  color: rgb(var(--cl-white));
+  text-align: center;
+  font-size: 16px;
+  font-weight: var(--weight-regular);
+  line-height: 1.5;
 }
 .contact-form-wrapper {
 }
