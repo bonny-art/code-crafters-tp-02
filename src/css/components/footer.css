@@ -5,7 +5,7 @@
 
 .footer {
   background-color: rgb(var(--cl-black));
-  color: white;
+  color: rgb(var(--cl-white));
 }
 
 .footer-container {
@@ -50,23 +50,21 @@
 .footer-address-text {
   color: rgba(var(--cl-white), 0.6);
   line-height: 18px;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em;
   font-size: 14px;
 }
 
 .footer-adress-link {
-  font-family: Manrope, sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: 0%;
+  letter-spacing: 0em;
 }
 
 .footer-logo {
   display: block;
   margin-bottom: 32px;
 
-  font-family: Manrope, sans-serif;
   font-weight: 700;
   font-size: 20px;
 
@@ -80,18 +78,18 @@
 }
 
 .footer-nav {
-  padding-left: 0px;
+  margin-left: 0px;
 }
 
 @media screen and (min-width: 768px) {
   .footer-nav {
-    padding-left: 28px;
+    margin-left: 28px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .footer-nav {
-    padding-left: 20px;
+    margin-left: 20px;
   }
 }
 
@@ -109,11 +107,10 @@
 }
 
 .footer-nav-item {
-  font-family: Manrope, sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: 0%;
+  letter-spacing: 0em;
 }
 
 .footer-socials-list {
@@ -145,11 +142,10 @@
   padding: 23px 0;
   color: rgba(var(--cl-white), 0.6);
 
-  font-family: Manrope, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: -2%;
+  letter-spacing: -0.02em;
 
 }
 
