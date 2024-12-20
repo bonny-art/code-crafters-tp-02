@@ -101,3 +101,13 @@
 .mobile-menu-social-link:hover svg {
   transform: scale(1.1);
 }
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    width: 384px;
+  }
+
+  .mobile-menu-social{
+    padding: 20px 64px;
+  }
+}
