@@ -1,1 +1,1 @@
-{"version":3,"mappings":";ysDAAA,OAAO,qCAAqB","names":[],"ignoreList":[],"sources":["../src/main.js"],"sourcesContent":["import('./js/reviews-swiper');\n"],"file":"index.js"}
+{"version":3,"mappings":";ysDAAA,OAAO,qCAAqB,gCAC5B,OAAO,2BAAW,EAAC","names":[],"ignoreList":[],"sources":["../src/main.js"],"sourcesContent":["import('./js/reviews-swiper');\nimport('./js/menu');"],"file":"index.js"}
