@@ -3,18 +3,22 @@
 }
 
 .contact-description {
-  width: auto;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 20px;
-  color: rgb(var(--cl-black));
 }
 
 @media only screen and (min-width: 768px) {
   .contact-description {
-    width: 709px;
+    width: 586px;
     margin-bottom: 64px;
     color: inherit;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .contact-description {
+    width: 709px;
   }
 }
 
@@ -41,14 +45,19 @@
   border-radius: 30px;
 }
 
-.contact-card img {
-  border-radius: 30px;
-}
-
 @media only screen and (max-width: 1279px) {
   .contact-card {
     display: none;
   }
+}
+
+.contact-card img {
+  border-radius: 30px;
+}
+
+.contact-card-content {
+  display: block;
+  text-align: center;
 }
 
 .contact-card-description-title {
@@ -61,11 +70,13 @@
 
 .contact-card-dascription-text {
   padding: 0 20px;
-  color: rgb(var(--cl-white));
+  color: rgb(var(--cl-white), 50%);
   text-align: center;
   font-size: 16px;
   font-weight: var(--weight-regular);
   line-height: 1.5;
+  display: block;
+  margin-top: 8px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -95,6 +106,8 @@
   border-radius: 12px;
   border: 1px solid rgba(18, 20, 23, 0.1);
   outline: none;
+  transition: var(--fast-trns);
+  transition-property: border;
 }
 
 .contact-form-input:focus,
@@ -119,8 +132,9 @@
 }
 
 .contact-form-message {
-  padding: 16px 188px 60px 18px;
   resize: none;
+  height: 100px;
+  display: block;
 }
 
 .contact-form-radio-buttons {
@@ -161,6 +175,13 @@
   align-items: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .radio-options-item .contact-form-label {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
 input[type='radio'] {
   appearance: none; /* Hides the default style */
   -webkit-appearance: none; /* For Safari */
@@ -189,7 +210,7 @@ input[type='radio'] {
 
 .cta-button {
   display: inline-flex;
-  padding: 14px 150px;
+  padding: 14px 28px;
   justify-content: center;
   align-items: center;
   border-radius: 12px;
@@ -203,7 +224,7 @@ input[type='radio'] {
 @media only screen and (min-width: 768px) {
   .cta-button {
     width: 500px;
-    padding: 16px 228px;
+    padding: 16px 32px;
     justify-content: center;
     align-items: center;
     margin-top: 32px;
