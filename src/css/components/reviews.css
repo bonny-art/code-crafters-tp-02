@@ -14,10 +14,6 @@
   }
 }
 
-.reviews-container {
-  overflow-x: hidden;
-}
-
 .reviews-descr {
   margin: 0 auto 40px;
 
@@ -28,30 +24,6 @@
   .reviews-descr {
     width: 647px;
     margin: 0 auto 64px;
-  }
-}
-
-.reviews-swiper-container {
-  width: 100%;
-}
-
-.reviews-swiper-wrapper {
-  display: flex;
-}
-
-.reviews-swiper-slide {
-  min-width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .reviews-swiper-slide {
-    min-width: calc((100% - 32px) / 2);
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .reviews-swiper-slide {
-    min-width: calc((100% - 64px) / 3);
   }
 }
 
@@ -99,6 +71,7 @@
 
 .reviews-client-photo-box {
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .reviews-client-caption {

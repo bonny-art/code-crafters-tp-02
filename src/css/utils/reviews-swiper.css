@@ -1,0 +1,99 @@
+.reviews-swiper-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.reviews-swiper-wrapper {
+  display: flex;
+}
+
+.reviews-swiper-slide {
+  min-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-swiper-slide {
+    min-width: calc((100% - 32px) / 2);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews-swiper-slide {
+    min-width: calc((100% - 64px) / 3);
+  }
+}
+
+.swiper-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 1280px) {
+  .swiper-controls {
+    display: none;
+  }
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(var(--cl-light-green));
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(var(--cl-green));
+}
+
+.swiper-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+  border: 1px solid rgb(var(--cl-green));
+
+  color: rgb(var(--cl-green));
+  background-color: rgb(var(--cl-white));
+
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.swiper-button:hover,
+.swiper-button:focus {
+  color: rgb(var(--cl-white));
+  background-color: rgb(var(--cl-green));
+}
+
+.swiper-button-image {
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.reviews-button-prev {
+  left: 0;
+}
+.swiper-button-prew-img {
+  transform: rotate(90deg);
+}
+.reviews-button-next {
+  right: 0;
+}
+.swiper-button-next-image {
+  transform: rotate(-90deg);
+}
