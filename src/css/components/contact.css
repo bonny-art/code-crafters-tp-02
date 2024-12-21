@@ -6,7 +6,7 @@
   width: auto;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   color: rgb(var(--cl-black));
 }
 
@@ -75,14 +75,16 @@
   }
 }
 
+.contact-form .contact-form-fields {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
 .contact-form {
   display: inline-flex;
   flex-direction: column;
-  gap: 16px;
-}
-
-.contact-form-label {
-  color: rgb(var(--cl-black));
 }
 
 .contact-form-input,
@@ -103,6 +105,17 @@
 .contact-form-input::placeholder,
 .contact-form-message::placeholder {
   color: rgb(var(--cl-black));
+  font-size: 14px;
+  font-weight: var(--weight-regular);
+  line-height: 1.28;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-form-input::placeholder,
+  .contact-form-message::placeholder {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
 
 .contact-form-message {
@@ -138,6 +151,7 @@
 }
 
 .radio-options-item .contact-form-label {
+  color: rgb(var(--cl-black));
   font-size: 14px;
   font-style: normal;
   font-weight: var(--weight-regular);
@@ -181,8 +195,9 @@ input[type='radio'] {
   border-radius: 12px;
   background: rgb(var(--cl-green));
   border: none;
-  margin-top: 24px;
-  color: white;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  color: rgb(var(--cl-white));
 }
 
 @media only screen and (min-width: 768px) {
@@ -191,6 +206,7 @@ input[type='radio'] {
     padding: 16px 228px;
     justify-content: center;
     align-items: center;
+    margin-top: 32px;
   }
 }
 
