@@ -1,3 +1,7 @@
+:root {
+  --items: 1; /* За замовчуванням для мобільних пристроїв */
+}
+
 .teachers {
   align-items: center;
 
@@ -8,8 +12,6 @@
 .teacher-list {
   margin-top: 80px;
   margin-bottom: 80px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 40px;
@@ -44,12 +46,13 @@
   gap: 8px;
 }
 
+/* Tablet*/
 @media screen and (min-width: 768px) {
+  :root {
+    --items: 2;
+  }
+
   .teacher-list {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 32px;
   }
 
@@ -60,16 +63,13 @@
   }
 }
 
+/*Desktop*/
 @media screen and (min-width: 1280px) {
-  .teachers {
-    p {
-      width: 709px;
-    }
+  :root {
+    --items: 4;
   }
+
   .teacher-list {
     gap: 32px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 }
