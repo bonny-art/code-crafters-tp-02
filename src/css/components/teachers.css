@@ -1,6 +1,6 @@
 .teachers {
   background-image: var(--cl-white);
-
+  align-items: center;
   h2 {
     width: 336px;
     color: #121417;
@@ -14,7 +14,12 @@
     margin-top: 80px;
     margin-bottom: 16px;
   }
-
+  h2 span {
+    color: #121417;
+    background-color: #bee8cc;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
   p {
     width: 334px;
     color: rgba(18, 20, 23, 0.5);
