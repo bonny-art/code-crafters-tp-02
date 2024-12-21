@@ -1,12 +1,8 @@
 .teachers {
-    align-items: center;
-
-
+  align-items: center;
 
   p {
-
     text-align: center;
-
   }
 }
 .teacher-list {
@@ -24,13 +20,8 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
-.teacher-text{
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-  h3 {
 
+  h3 {
     text-align: center;
     font-size: 20px;
     line-height: 1.2; /* 120% */
@@ -39,20 +30,21 @@
 
   p {
     text-align: center;
-
   }
 
   img {
-    width: 150px;
-    height: 150px;
-    flex-shrink: 0;
     border-radius: 50%;
-    margin-bottom: 15px;
+    overflow: hidden;
   }
 }
 
-@media screen and (min-width: 768px) {
+.teacher-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
+@media screen and (min-width: 768px) {
   .teacher-list {
     display: flex;
     align-items: flex-start;
@@ -62,10 +54,6 @@
   }
 
   .teacher-card {
-
-
-
-
     p {
       font-size: 16px;
     }
@@ -74,7 +62,6 @@
 
 @media screen and (min-width: 1280px) {
   .teachers {
-
     p {
       width: 709px;
     }
@@ -84,10 +71,5 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  .teacher-card {
-
-
   }
 }
