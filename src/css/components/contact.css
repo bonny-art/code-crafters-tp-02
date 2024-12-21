@@ -99,7 +99,7 @@
 
 .contact-form-input:focus,
 .contact-form-message:focus {
-  border: 1px solid var(--cl-green, #4dc274);
+  border: 1px solid #4dc274;
 }
 
 .contact-form-input::placeholder,
