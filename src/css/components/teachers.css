@@ -58,7 +58,6 @@
 
   p {
     width: 335px;
-    height: 75px;
     flex-shrink: 0;
     color: rgba(18, 20, 23, 0.5);
     text-align: center;
@@ -98,6 +97,8 @@
   .teacher-list {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 32px;
   }
 
@@ -106,15 +107,14 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
-  }
 
-  h3 {
-  }
+    h3 {
+    }
 
-  p {
-    width: 272px;
-    height: 120px;
-    font-size: 16px;
+    p {
+      width: 272px;
+      font-size: 16px;
+    }
   }
 }
 /*
