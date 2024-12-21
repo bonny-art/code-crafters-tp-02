@@ -1,22 +1,36 @@
 import Swiper from 'swiper/bundle';
 
-const swiper = new Swiper('.reviews-swiper-container', {
-  grabCursor: true,
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      loop: true,
+function initializeSwiper() {
+  const swiper = new Swiper('.reviews-swiper-container', {
+    grabCursor: true,
+    navigation: {
+      nextEl: '.reviews-button-next',
+      prevEl: '.reviews-button-prev',
     },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 32,
-      loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
     },
-    1280: {
-      slidesPerView: 3,
-      spaceBetween: 32,
-      loop: false,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 32,
+        loop: true,
+      },
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 32,
+        loop: false,
+      },
     },
-  },
-});
+  });
+
+  return swiper;
+}
+
+initializeSwiper();

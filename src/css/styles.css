@@ -10,6 +10,7 @@
 
 /* Utils styles */
 @import url('./utils/animations.css');
+@import url('./utils/reviews-swiper.css');
 
 /* Common styles */
 @import url('./common/reset.css');
