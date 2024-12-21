@@ -4,23 +4,20 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const backdrop = document.querySelector('.backdrop');
 const closeButton = document.querySelector('.mobile-menu-close');
 
-// Function to open the mobile menu
-function openMobileMenu() {
-  mobileMenu.style.transform = 'translateX(0)';
-  backdrop.style.display = 'block';
-}
+burgerButton.addEventListener("click", () => {
+  backdrop.classList.add("is-active");
+  mobileMenu.classList.add("is-active");
+});
 
-// Function to close the mobile menu
-function closeMobileMenu() {
-  mobileMenu.style.transform = 'translateX(100%)';
-  backdrop.style.display = 'none';
-}
+closeButton.addEventListener("click", () => {
+  backdrop.classList.remove("is-active");
+  mobileMenu.classList.remove("is-active");
+});
 
-// Add event listeners
-burgerButton.addEventListener('click', openMobileMenu);
-closeButton.addEventListener('click', closeMobileMenu);
-backdrop.addEventListener('click', closeMobileMenu);
-
-// Initial state
-mobileMenu.style.transform = 'translateX(100%)';
-backdrop.style.display = 'none';
+// Optional: Close backdrop when clicking outside
+document.addEventListener("click", (e) => {
+  if (!backdrop.contains(e.target) && !burgerBtn.contains(e.target)) {
+    backdrop.classList.remove("is-active");
+    mobileMenu.classList.remove("is-active");
+  }
+});
