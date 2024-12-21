@@ -1,7 +1,7 @@
 // Select the elements from the DOM
 const burgerButton = document.querySelector('.burger-button');
 const mobileMenu = document.querySelector('.mobile-menu');
-const backdrop = document.querySelector('.backdrope');
+const backdrop = document.querySelector('.backdrop');
 const closeButton = document.querySelector('.mobile-menu-close');
 
 // Function to open the mobile menu

@@ -1,5 +1,5 @@
 /* General styles for the mobile menu backdrop */
-.backdrope {
+.backdrop {
   display: none;
   position: fixed;
   top: 0;
@@ -7,9 +7,32 @@
   width: 100%;
   height: 100%;
   background-color: rgba(var(--cl-black), 0.5);
-  z-index: 1000;
-  transition: transform 0.9s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 
+  z-index: 8;
+
+
+}.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 240px; 
+  height: 100vh; 
+  background-color: rgb(var(--cl-green)); 
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  z-index: 9;
+
+}.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 240px; 
+  height: 100vh; 
+  background-color: rgb(var(--cl-green)); 
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  z-index: 9;
 }
 
 /* Mobile menu container */
@@ -21,10 +44,10 @@
   height: 100vh; 
   background-color: rgb(var(--cl-green)); 
   transform: translateX(100%);
-  z-index: 1001;
-  transition: transform 0.9s ease-in-out;
-}
+  transition: transform 0.3s ease-in-out;
 
+  z-index: 9;
+}
 .mobile-menu-container{
   height: inherit;
 }
@@ -108,6 +131,7 @@
   }
 
   .mobile-menu-social{
-    padding: 20px 64px;
+    padding: 20px 114px;
   }
 }
+
