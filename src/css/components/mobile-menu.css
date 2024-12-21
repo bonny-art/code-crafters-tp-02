@@ -7,8 +7,6 @@
   width: 100%;
   height: 100%;
   background-color: rgba(var(--cl-black), 0.5);
-  transition: transform 0.3s ease-in-out;
-
   z-index: 8;
 }
 
