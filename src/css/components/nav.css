@@ -1,32 +1,32 @@
 .nav-list {
   display: inline-flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 20px;
-  color: #ffffff;
+  color: rgb(var(--cl-white));
 }
-.header-nav {
-  display: none;
+
+.mobile-menu-nav-list {
+  align-items: center;
 }
+
+.footer-nav-list {
+  align-items: flex-start;
+}
+
 .nav-item {
 }
 .nav-link {
-  font-style: normal;
   font-weight: 600;
   line-height: 1.29;
 }
 
 @media screen and (min-width: 1280px) {
-  .header-nav {
-    display: block;
-  }
   .header-nav-list {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
-    color: #121417;
+    color: rgb(var(--cl-black));
   }
 
   .header-nav-list .nav-item {
@@ -40,7 +40,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #4dc274;
+    background-color: rgb(var(--cl-green));
     transition: transform 0.3s ease;
     transform: translateX(-100%);
   }
