@@ -116,7 +116,9 @@
 }
 
 .contact-form-input:focus,
-.contact-form-message:focus {
+.contact-form-message:focus,
+.contact-form-input:hover,
+.contact-form-message:hover {
   border: 1px solid #4dc274;
 }
 
@@ -234,6 +236,13 @@ input[type='radio'] {
   margin-top: 40px;
   margin-bottom: 16px;
   color: rgb(var(--cl-white));
+  transition: var(--fast-trns);
+  transition-property: background-color;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+  background-color: rgb(var(--cl-green-hover));
 }
 
 @media only screen and (min-width: 768px) {
@@ -266,4 +275,12 @@ input[type='radio'] {
 
 .privacy-policy-link {
   text-decoration-line: underline;
+  transition: var(--fast-trns);
+  transition-property: background-color, color;
+}
+
+.privacy-policy-link:hover,
+.privacy-policy-link:focus {
+  background-color: rgb(var(--cl-green));
+  color: rgb(var(--cl-white));
 }
