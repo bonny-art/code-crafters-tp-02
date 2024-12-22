@@ -1,2 +1,0 @@
-import{S as e}from"./vendor-CUnLjt9d.js";function i(){return new e(".reviews-swiper-container",{grabCursor:!0,navigation:{nextEl:".reviews-button-next",prevEl:".reviews-button-prev"},pagination:{el:".swiper-pagination",clickable:!0},breakpoints:{320:{slidesPerView:1,spaceBetween:20,loop:!0},768:{slidesPerView:2,spaceBetween:32,loop:!0},1280:{slidesPerView:3,spaceBetween:32,loop:!1}}})}i();
-//# sourceMappingURL=reviews-swiper-CcnyVWH7.js.map

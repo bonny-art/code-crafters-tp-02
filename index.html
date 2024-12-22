@@ -24,7 +24,7 @@
 
     <!-- Styles -->
     <script type="module" crossorigin src="/code-crafters-tp-02/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/code-crafters-tp-02/assets/index-Df3vPSDX.css">
+    <link rel="stylesheet" crossorigin href="/code-crafters-tp-02/assets/index-EK9BrTAX.css">
   </head>
   <body>
     <header class="header">
@@ -106,7 +106,7 @@
 </ul>
 
     </div>
-    <button class="burger-button js-burger-button">
+    <button class="burger-button js-burger-button" type="button">
       <svg class="burger-button-icon mobile-icon" width="32" height="32">
         <use href="/code-crafters-tp-02/assets/icons-DkyxRM-e.svg#mob-menu"></use>
       </svg>
@@ -129,7 +129,7 @@
       <div class="hero-controls">
         <a href="#contact" class="hero-button"> Leave an application </a>
       </div>
-      <a class="hero-link" href="#footer">
+      <a class="hero-link" href="#footer" aria-label="Scroll to footer">
         <svg class="hero-link-icon" width="24" height="24">
           <use href="/code-crafters-tp-02/assets/icons-DkyxRM-e.svg#arrow-down"></use>
         </svg>
@@ -282,7 +282,7 @@
   </div>
 </section>
 
-      <section class="teachers section">
+      <section class="teachers section" id="teachers">
   <div class="container">
     <h2 class="section-title">
       Meet our <span class="section-title-accent">teachers</span>
@@ -300,6 +300,7 @@
             alt="Maria"
             width="150"
             height="150"
+            loading="”lazy”"
           />
         </div>
         <div class="teacher-text">
@@ -319,6 +320,7 @@
             alt="Artem"
             width="150"
             height="150"
+            loading="”lazy”"
           />
         </div>
         <div class="teacher-text">
@@ -338,6 +340,7 @@
             alt="Ilona"
             width="150"
             height="150"
+            loading="”lazy”"
           />
         </div>
         <div class="teacher-text">
@@ -358,6 +361,7 @@
             alt="Volodymyr"
             width="150"
             height="150"
+            loading="”lazy”"
           />
         </div>
         <div class="teacher-text">
@@ -544,8 +548,8 @@
     </p>
 
     <div class="reviews-swiper-container">
-      <ul class="swiper-wrapper reviews-swiper-wrapper">
-        <li class="card-set-item swiper-slide reviews-swiper-slide">
+      <div class="swiper-wrapper reviews-swiper-wrapper">
+        <div class="card-set-item swiper-slide reviews-swiper-slide">
           <div class="reviews-card">
             <div class="reviews-client-box">
               <div class="reviews-client-photo-box">
@@ -556,6 +560,7 @@
                   alt="Photo of client Anna"
                   width="50"
                   height="50"
+                  loading="”lazy”"
                 />
               </div>
               <div class="reviews-client-caption">
@@ -571,9 +576,9 @@
               </p>
             </div>
           </div>
-        </li>
+        </div>
 
-        <li class="card-set-item swiper-slide reviews-swiper-slide">
+        <div class="card-set-item swiper-slide reviews-swiper-slide">
           <div class="reviews-card">
             <div class="reviews-client-box">
               <div class="reviews-client-photo-box">
@@ -584,6 +589,7 @@
                   alt="Photo of client Mykhailo"
                   width="50"
                   height="50"
+                  loading="”lazy”"
                 />
               </div>
               <div class="reviews-client-caption">
@@ -599,9 +605,9 @@
               </p>
             </div>
           </div>
-        </li>
+        </div>
 
-        <li class="card-set-item swiper-slide reviews-swiper-slide">
+        <div class="card-set-item swiper-slide reviews-swiper-slide">
           <div class="reviews-card">
             <div class="reviews-client-box">
               <div class="reviews-client-photo-box">
@@ -612,6 +618,7 @@
                   alt="Photo of client Victoria"
                   width="50"
                   height="50"
+                  loading="”lazy”"
                 />
               </div>
               <div class="reviews-client-caption">
@@ -627,8 +634,8 @@
               </p>
             </div>
           </div>
-        </li>
-      </ul>
+        </div>
+      </div>
 
       <div class="swiper-controls">
         <button
@@ -769,15 +776,17 @@
   </div>
 </footer>
 
+
     <div class="backdrop backdrop-js">
   <div class="mobile-menu mobile-menu-js">
     <div class="mobile-content">
       <button
         class="mobile-menu-close-btn mobile-menu-close-js"
         aria-label="Close menu"
+        type="button"
       >
         <svg class="mobile-menu-close-icon" width="32" height="32">
-          <use href="../img/icons.svg#close"></use>
+          <use href="/code-crafters-tp-02/assets/icons-DkyxRM-e.svg#close"></use>
         </svg>
       </button>
       <div class="mobile-menu-wrapper">
@@ -857,6 +866,17 @@
     </div>
   </div>
 </div>
+
+    <button
+  id="toTopButton"
+  aria-label="Scroll to top"
+  class="to-top-btn to-top-btn-js"
+  title="Scroll to top"
+>
+  <svg class="to-top-btn-icon" width="40" height="40">
+    <use href="../img/icons.svg#arrow-down"></use>
+  </svg>
+</button>
 
 
   </body>

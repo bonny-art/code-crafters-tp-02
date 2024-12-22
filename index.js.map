@@ -1,1 +1,1 @@
-{"version":3,"mappings":";ysDAAA,OAAO,qCAAqB,gCAC5B,OAAO,2BAAW,EAAC","names":[],"ignoreList":[],"sources":["../src/main.js"],"sourcesContent":["import('./js/reviews-swiper');\nimport('./js/menu');"],"file":"index.js"}
+{"version":3,"mappings":";ysDAAA,OAAO,qCAAqB,gCAC5B,OAAO,2BAAW,MAClBA,EAAA,WAAO,oCAAoB","names":["__vitePreload"],"ignoreList":[],"sources":["../src/main.js"],"sourcesContent":["import('./js/reviews-swiper');\nimport('./js/menu');\nimport('./js/button-to-top');\n"],"file":"index.js"}
