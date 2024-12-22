@@ -26,6 +26,7 @@
   --items: 2;
 
   /* Position */
+  --button-to-top-depth: 9;
   --header-depth: 10;
   --backdrop-depth: 11;
 

@@ -11,6 +11,11 @@ function initializeSwiper() {
       el: '.swiper-pagination',
       clickable: true,
     },
+    a11y: {
+      enabled: true,
+      containerMessage: 'Student reviews carousel',
+      itemMessage: 'Review item',
+    },
     breakpoints: {
       320: {
         slidesPerView: 1,
