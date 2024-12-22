@@ -1,4 +1,4 @@
-<section class="hero">
+<section id="hero" class="section-hero">
   <div class="container container-hero">
     <div class="hero-content">
       <h1 class="hero-title">
@@ -7,11 +7,7 @@
       </h1>
       <div class="hero-wrapper">
         <div class="hero-controls">
-          <a href="#contact">
-            <button class="hero-button" type="button">
-              Leave an application
-            </button>
-          </a>
+          <a href="#contact" class="hero-button"> Leave an application </a>
         </div>
         <a class="hero-link" href="#footer">
           <span class="hero-link-icon">
@@ -26,36 +22,24 @@
       <picture>
         <!-- Desk screen -->
         <source
-          media="(min-width: 1168px) and (orientation: landscape)"
+          media="(min-width: 1168px)"
           srcset="
-            ./img/webp/hero/desk@1x.webp 1x,
-            ./img/webp/hero/desk@2x.webp 2x
+            /img/webp/hero/desk@1x.webp 1x,
+            /img/webp/hero/desk@2x.webp 2x
           "
         />
         <!-- Tablet screen -->
         <source
-          media="(min-width: 768px) and (max-width: 1167px) and (orientation: portrait)"
-          srcset="./img/webp/hero/tab@1x.webp1x, ./img/webp/hero/tab@2x.webp2x"
+          media="(min-width: 768px) and (max-width: 1167px)"
+          srcset="/img/webp/hero/tab@1x.webp 1x, /img/webp/hero/tab@2x.webp 2x"
         />
         <!-- Mobile screen -->
         <source
-          media="(max-width: 767px) and (orientation: landscape)"
-          srcset="
-            ./img/webp/hero/desk@1x.webp 1x,
-            ./img/webp/hero/desk@2x.webp 2x
-          "
+          media="(max-width: 767px)"
+          srcset="/img/webp/hero/mob@1x.webp 1x, /img/webp/hero/mob@2x.webp 2x"
         />
-
-        <source
-          media="(max-width: 767px) and (orientation: portrait)"
-          srcset="
-            ./img/webp/hero/mob@1x.webp 1x,
-            ./img/webp/hero/mob@2x.webp 2x
-          "
-        />
-
         <img
-          src="/img/webp/hero/mob@1x.jpg"
+          src="/img/webp/hero/mob@1x.webp"
           alt="Smiling girl learning English"
         />
       </picture>

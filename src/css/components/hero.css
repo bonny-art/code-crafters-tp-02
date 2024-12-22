@@ -1,0 +1,87 @@
+
+.section-hero {
+  position: relative;
+  width: 1152px;
+  height: 729px;
+  background-image: url('/img/webp/hero/desk@1x.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) and (max-width: 1167px) {
+  .section-hero {
+    background-image: url('/img/webp/hero/tab@1x.webp');
+  }
+}
+
+@media (max-width: 767px) {
+  .section-hero {
+    background-image: url('/img/webp/hero/mob@1x.webp');
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  max-width: 564px;
+  margin-bottom: 32px;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.17;
+  letter-spacing: 0;
+  color: white;
+}
+
+.light-green {
+  color: #bce8cc;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 306px;
+  height: 60px;
+  background-color: #4dc274;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 12px;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #38ae5f;
+}
+
+.hero-link-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.hero-link-icon svg {
+  fill: #4dc274;
+  width: 24px;
+  height: 24px;
+}
+
+.hero-link-icon:hover {
+  background-color: #4dc274;
+}
+
+.hero-link-icon:hover svg {
+  fill: white;
+}
