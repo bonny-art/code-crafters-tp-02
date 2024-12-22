@@ -1,5 +1,20 @@
-<div class="mobile-menu">
-  <div class="container">
-    <p>mobile-menu</p>
+<div class="backdrop backdrop-js">
+  <div class="mobile-menu mobile-menu-js">
+    <div class="mobile-content">
+      <button
+        class="mobile-menu-close-btn mobile-menu-close-js"
+        aria-label="Close menu"
+      >
+        <svg class="mobile-menu-close-icon" width="32" height="32">
+          <use href="../img/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu-wrapper">
+        <nav class="mobile-menu-nav">
+          <load src="partials/nav.html" place="mobile-menu-nav-list" />
+        </nav>
+        <load src="partials/socials.html" place="mobile-menu-socials" />
+      </div>
+    </div>
   </div>
 </div>
