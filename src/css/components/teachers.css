@@ -1,20 +1,13 @@
-:root {
-  --items: 1; /* За замовчуванням для мобільних пристроїв */
-}
-
 .teachers {
-  align-items: center;
-
   p {
     text-align: center;
   }
 }
 .teacher-list {
-  margin-top: 80px;
-  margin-bottom: 80px;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
+  --items: 1;
+  --indent-row: 40px;
+
+  margin-top: 40px;
 }
 
 .teacher-card {
@@ -24,21 +17,17 @@
   gap: 16px;
 
   h3 {
-    color: #121417;
+    color: rgb(var(--cl-black));
     text-align: center;
     font-size: 20px;
-    line-height: 1.2; /* 120% */
+    line-height: 1.2;
     letter-spacing: -0.02em;
   }
+}
 
-  p {
-    text-align: center;
-  }
-
-  img {
-    border-radius: 50%;
-    overflow: hidden;
-  }
+.teacher-image-box {
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .teacher-text {
@@ -49,28 +38,32 @@
 
 /* Tablet*/
 @media screen and (min-width: 768px) {
-  :root {
-    --items: 2;
-  }
-
   .teacher-list {
-    gap: 32px;
+    --items: 2;
+    --indent-row: 32px;
+
+    width: 576px;
+    margin: 64px auto 0;
   }
 
   .teacher-card {
     p {
       font-size: 16px;
+      line-height: 1.5;
     }
   }
 }
 
 /*Desktop*/
 @media screen and (min-width: 1280px) {
-  :root {
-    --items: 4;
+  .teachers-description {
+    width: 709px;
+    margin: 0 auto;
   }
 
   .teacher-list {
-    gap: 32px;
+    --items: 4;
+
+    width: 100%;
   }
 }
