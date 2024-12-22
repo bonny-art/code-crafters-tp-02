@@ -24,7 +24,7 @@
 
     <!-- Styles -->
     <script type="module" crossorigin src="/code-crafters-tp-02/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/code-crafters-tp-02/assets/index-Ka0057EI.css">
+    <link rel="stylesheet" crossorigin href="/code-crafters-tp-02/assets/index-CWToiHAQ.css">
   </head>
   <body>
     <header class="header">
@@ -75,7 +75,7 @@
   </div>
 </section>
 
-      <section class="about section">
+      <section class="about section" id="about">
   <div class="container">
     <h2 class="section-title">
       About <span class="section-title-accent">Us</span>
@@ -108,8 +108,8 @@
       <li class="about-item about-image">
         <img
           class="about-list-item-img"
-          srcset="../img/about-section/about-list-item-img.png 1x, ../img/about-section/about-list-item-img@2x.png 2x"
-          src="../img/about-section/about-list-item-img.png"
+          srcset="/code-crafters-tp-02/assets/about-list-item-img-D9WGKOSx.png 1x, /code-crafters-tp-02/assets/about-list-item-img@2x-D1RNDCVu.png 2x"
+          src="/code-crafters-tp-02/assets/about-list-item-img-D9WGKOSx.png"
           alt="A smiling girl"
           loading="lazy"
           width="254"
@@ -225,9 +225,163 @@
   </div>
 </section>
 
-      <section class="contact">
+      <section class="contact section" id="contact">
   <div class="container">
-    <p>contact</p>
+    <h2 class="section-title">
+      Leave an <span class="section-title-accent">application</span>
+    </h2>
+    <p class="contact-description">
+      Please use the form below to contact us. Enter your name, email, and
+      message and we'll get back to you shortly.
+    </p>
+    <div class="contact-wrapper">
+      <div class="contact-card">
+        <img
+          class="about-list-item-img"
+          srcset="/code-crafters-tp-02/assets/contact-section-img-CZmWy2ZI.png 1x, /code-crafters-tp-02/assets/contact-section-img@2x-Bn_kubz0.png 2x"
+          src="/code-crafters-tp-02/assets/contact-section-img-CZmWy2ZI.png"
+          alt="Smiling girl"
+          loading="lazy"
+          width="492"
+          height="392"
+        />
+        <div class="contact-card-content">
+          <h3 class="contact-card-description-title">1000</h3>
+          <p class="contact-card-dascription-text">
+            of our online English language lessons! This journey has been full
+            of discovery, growth and unforgettable moments, and we are happy to
+            share this joyful event with you.
+          </p>
+        </div>
+      </div>
+      <div class="contact-form-wrapper">
+        <form class="contact-form" name="contact-form">
+          <div class="contact-form-fields">
+            <div class="contact-form-field">
+              <label class="contact-form-label" for="user-name"></label>
+              <input
+                class="contact-form-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+                minlength="3"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="contact-form-field">
+              <label class="contact-form-label" for="user-email"> </label>
+              <input
+                class="contact-form-input"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="contact-form-field">
+              <label class="contact-form-label" for="user-phone"> </label>
+              <input
+                class="contact-form-input"
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                placeholder="Phone"
+                required
+                pattern="^\+?[1-9]\d{1,14}(\s|-|\(\d+\)|\d)*$"
+                title="Please enter a valid phone number. For example: +1234567890, +1 (234) 567-890, or 123-456-7890"
+              />
+            </div>
+            <div class="contact-form-field text-area">
+              <label class="contact-form-label" for="user-comment"></label>
+              <textarea
+                class="contact-form-message"
+                name="user-comment"
+                id="user-comment"
+                placeholder="Comment"
+                minlength="10"
+                maxlength="1000"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="contact-form-radio-buttons">
+            <h3 class="contact-form-options-title">Choose a teacher</h3>
+            <ul class="radio-options">
+              <li class="radio-options-item">
+                <div class="custom-radio">
+                  <input
+                    class="contact-form-input-radio-btn"
+                    type="radio"
+                    id="teacher-maria"
+                    name="user-preferences"
+                    value="Maria"
+                    checked
+                  />
+                  <label class="contact-form-label" for="teacher-maria"
+                    >Maria</label
+                  >
+                </div>
+              </li>
+              <li class="radio-options-item">
+                <div class="custom-radio">
+                  <input
+                    class="contact-form-input-radio-btn"
+                    type="radio"
+                    id="teacher-artem"
+                    name="user-preferences"
+                    value="Artem"
+                  />
+                  <label class="contact-form-label" for="teacher-artem"
+                    >Artem</label
+                  >
+                </div>
+              </li>
+              <li class="radio-options-item">
+                <div class="custom-radio">
+                  <input
+                    class="contact-form-input-radio-btn"
+                    type="radio"
+                    id="teacher-ilona"
+                    name="user-preferences"
+                    value="Ilona"
+                  />
+                  <label class="contact-form-label" for="teacher-ilona"
+                    >Ilona</label
+                  >
+                </div>
+              </li>
+              <li class="radio-options-item">
+                <div class="custom-radio">
+                  <input
+                    class="contact-form-input-radio-btn"
+                    type="radio"
+                    id="teacher-volodymyr"
+                    name="user-preferences"
+                    value="Volodymyr"
+                  />
+                  <label class="contact-form-label" for="teacher-volodymyr"
+                    >Volodymyr</label
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <button class="cta-button" type="submit">Send</button>
+          <p class="contact-form-privacy-policy-text">
+            By clicking on 'Send' button, you agree to our
+            <span
+              ><a href="https://example.com" class="privacy-policy-link"
+                >Privacy Policy</a
+              > </span
+            >, <br />
+            and allow Promodo to use this information for marketing purposes.
+          </p>
+        </form>
+      </div>
+    </div>
   </div>
 </section>
 
