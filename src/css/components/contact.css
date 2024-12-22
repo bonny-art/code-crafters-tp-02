@@ -44,7 +44,7 @@
   border-radius: 30px;
 }
 
-@media only screen and (max-width: 1279px) {
+@media only screen and (max-width: 1279.6px) {
   .contact-card {
     display: none;
   }
