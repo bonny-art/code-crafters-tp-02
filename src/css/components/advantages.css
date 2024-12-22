@@ -28,14 +28,16 @@
   .content {
     padding: 64px 64px 142px;
     background: var(--cl-green-linear);
+
     border-radius: 30px;
 
-    @media only screen and (max-width: 1279px) {
+    @media only screen and (max-width: 1279.6px) {
       padding: 64px 18px 92px;
     }
 
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 767.6px) {
       padding: 40px 18px 64px;
+      border-radius: 16px;
     }
 
     .title {
@@ -45,11 +47,11 @@
       font-weight: bold;
       color: rgb(var(--cl-white));
 
-      @media only screen and (max-width: 1279px) {
+      @media only screen and (max-width: 1279.6px) {
         padding: 0 14px;
       }
 
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: 767.6px) {
         width: auto;
         padding: 0;
         font-size: 38px;
@@ -57,7 +59,7 @@
       }
 
       .highlight {
-        color: #BEE8CC;
+        color: #bee8cc;
       }
     }
 
@@ -74,12 +76,12 @@
         line-height: 1.2;
         z-index: 3;
 
-        @media only screen and (max-width: 1279px) {
+        @media only screen and (max-width: 1279.6px) {
           margin-top: 83px;
           padding: 64px 174px 64px 32px;
         }
 
-        @media only screen and (max-width: 767px) {
+        @media only screen and (max-width: 767.6px) {
           margin-top: 65px;
           padding: 40px 20px;
         }
@@ -88,7 +90,7 @@
           font-size: 40px;
           letter-spacing: -0.02em;
 
-          @media only screen and (max-width: 767px) {
+          @media only screen and (max-width: 767.6px) {
             font-size: 20px;
           }
         }
@@ -99,11 +101,11 @@
           font-weight: bold;
           letter-spacing: -0.02em;
 
-          @media only screen and (max-width: 1279px) {
+          @media only screen and (max-width: 1279.6px) {
             margin-top: 32px;
           }
 
-          @media only screen and (max-width: 767px) {
+          @media only screen and (max-width: 767.6px) {
             margin-top: 20px;
             font-size: 14px;
             line-height: 20px;
@@ -114,7 +116,7 @@
             align-items: center;
             column-gap: 16px;
 
-            @media only screen and (max-width: 767px) {
+            @media only screen and (max-width: 767.6px) {
               column-gap: 8px;
             }
 
@@ -128,7 +130,7 @@
               background-color: rgb(var(--cl-green));
               border-radius: 50%;
 
-              @media only screen and (max-width: 767px) {
+              @media only screen and (max-width: 767.6px) {
                 width: 20px;
                 height: 20px;
               }
@@ -164,7 +166,7 @@
             margin-top: 32px;
           }
 
-          @media only screen and (max-width: 767px) {
+          @media only screen and (max-width: 767.6px) {
             margin-top: 20px;
             padding: 14px 24px;
             font-size: 14px;
@@ -181,11 +183,11 @@
           right: 0;
           bottom: 64px;
 
-          @media only screen and (max-width: 1279px) {
+          @media only screen and (max-width: 1279.6px) {
             right: -52px;
           }
 
-          @media only screen and (max-width: 767px) {
+          @media only screen and (max-width: 767.6px) {
             display: none;
           }
         }
@@ -206,7 +208,7 @@
         animation: advantages-wave 15s infinite;
       }
 
-      @media only screen and (max-width: 1279px) {
+      @media only screen and (max-width: 1279.6px) {
         &::before {
           left: 0;
           width: 100%;
@@ -214,7 +216,7 @@
         }
       }
 
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: 767.6px) {
         &::before {
           left: 1px;
           bottom: 1px;
@@ -236,7 +238,7 @@
         animation: advantages-wave-reverse 15s infinite;
       }
 
-      @media only screen and (max-width: 1279px) {
+      @media only screen and (max-width: 1279.6px) {
         &::after {
           top: 7px;
           left: 9px;
@@ -245,7 +247,7 @@
         }
       }
 
-      @media only screen and (max-width: 767px) {
+      @media only screen and (max-width: 767.6px) {
         &::after {
           left: 1px;
           top: 1px;

@@ -30,24 +30,25 @@
   color: rgb(var(--cl-green));
 }
 
-.header-socials {
+.header-nav {
   display: none;
 }
 
 @media screen and (min-width: 1280px) {
-  .header-socials {
-    background-color: aqua; /* Temporary color */
-    /* socials component size params */
-    width: 156px;
-    height: 44px;
+  .header-nav {
+    display: block;
+    /* justify-content: space-between;
+    align-items: center; */
   }
 }
 
+.header-socials-wraper {
+  display: none;
+}
+
 @media screen and (min-width: 1280px) {
-  .header-socials {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .header-socials-wraper {
+    display: block;
   }
 }
 

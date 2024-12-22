@@ -15,7 +15,6 @@
 /* Common styles */
 @import url('./common/reset.css');
 @import url('./common/base.css');
-@import url('./common/typography.css');
 @import url('./common/container.css');
 @import url('./common/card-set.css');
 

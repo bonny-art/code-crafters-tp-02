@@ -1,22 +1,48 @@
-// Select the elements from the DOM
-const burgerButton = document.querySelector('.burger-button');
-const mobileMenu = document.querySelector('.mobile-menu');
-const backdrop = document.querySelector('.backdrop');
-const closeButton = document.querySelector('.mobile-menu-close');
+const burgerButton = document.querySelector('.js-burger-button');
+const mobileMenu = document.querySelector('.mobile-menu-js');
+const backdrop = document.querySelector('.backdrop-js');
+const closeButton = document.querySelector('.mobile-menu-close-js');
 
-burgerButton.addEventListener("click", () => {
-  backdrop.style.display = "block";
-  mobileMenu.classList.add("is-active");
+const disableScroll = () => {
+  document.body.style.overflow = 'hidden';
+};
+
+const enableScroll = () => {
+  document.body.style.overflow = '';
+};
+
+const closeMenu = () => {
+  mobileMenu.style.transform = 'translateX(100%)';
+
+  setTimeout(() => {
+    backdrop.style.opacity = 0;
+    backdrop.style.visibility = 'hidden';
+
+    enableScroll();
+  }, 300);
+};
+
+burgerButton.addEventListener('click', () => {
+  backdrop.style.visibility = 'visible';
+  backdrop.style.opacity = 1;
+  mobileMenu.style.transform = 'translateX(0%)';
+
+  disableScroll();
 });
 
-closeButton.addEventListener("click", () => {
-  backdrop.style.display = "none";
-  mobileMenu.classList.remove("is-active");
+closeButton.addEventListener('click', closeMenu);
+
+backdrop.addEventListener('click', event => {
+  if (event.target === backdrop) {
+    closeMenu();
+  }
 });
 
-// Optional: Close backdrop when clicking outside
-document.addEventListener("click", (e) => {
-  if (!backdrop.contains(e.target) && !burgerBtn.contains(e.target)) {
-    mobileMenu.classList.remove("is-active");
+document.addEventListener('keydown', event => {
+  if (
+    event.key === 'Escape' &&
+    mobileMenu.style.transform === 'translateX(0%)'
+  ) {
+    closeMenu();
   }
 });

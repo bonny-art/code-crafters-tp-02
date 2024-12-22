@@ -1,34 +1,20 @@
-<div class="backdrop">
-  <div class="mobile-menu">
-    <div class="mobile-menu-container">
-      <button class="mobile-menu-close" aria-label="Close menu">
-        <svg class="mobile-menu-close-icon" width="24" height="24">
+<div class="backdrop backdrop-js">
+  <div class="mobile-menu mobile-menu-js">
+    <div class="mobile-content">
+      <button
+        class="mobile-menu-close-btn mobile-menu-close-js"
+        aria-label="Close menu"
+      >
+        <svg class="mobile-menu-close-icon" width="32" height="32">
           <use href="../img/icons.svg#close"></use>
         </svg>
       </button>
-
-      <nav class="mobile-menu-nav">
-        <ul class="mobile-menu-nav-list">
-          <li class="mobile-menu-nav-item">
-            <a href="#" class="mobile-menu-nav-link">About us</a>
-          </li>
-          <li class="mobile-menu-nav-item">
-            <a href="#" class="mobile-menu-nav-link">Our lessons</a>
-          </li>
-          <li class="mobile-menu-nav-item">
-            <a href="#" class="mobile-menu-nav-link">Teachers</a>
-          </li>
-          <li class="mobile-menu-nav-item">
-            <a href="#" class="mobile-menu-nav-link">Teachers</a>
-          </li>
-          <li class="mobile-menu-nav-item">
-            <a href="#" class="mobile-menu-nav-link">Contact us</a>
-          </li>
-        </ul>
-
-       <!-- Socials component -->
+      <div class="mobile-menu-wrapper">
+        <nav class="mobile-menu-nav">
+          <load src="partials/nav.html" place="mobile-menu-nav-list" />
+        </nav>
         <load src="partials/socials.html" place="mobile-menu-socials" />
-      </nav>
+      </div>
     </div>
   </div>
 </div>
