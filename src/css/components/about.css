@@ -6,7 +6,7 @@
 
 .about-grid-container {
   display: grid;
-  gap: 20px;
+  grid-gap: 20px;
   grid-template-columns: 1fr;
   grid-template-areas:
     'about1'
@@ -19,7 +19,7 @@
 
 @media only screen and (min-width: 768px) {
   .about-grid-container {
-    gap: 32px;
+    grid-gap: 32px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       'about1 about2'
@@ -31,7 +31,6 @@
 
 @media only screen and (min-width: 1280px) {
   .about-grid-container {
-    gap: 32px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       'about1 about2 about-image'
