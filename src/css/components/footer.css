@@ -16,21 +16,34 @@
 
 .footer-box-main {
   display: flex;
-  justify-content: space-between;
   padding: 64px 0;
   width: 100%;
   text-align: center;
+}
 
-  @media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1279.6px) {
+  .footer-box-main {
+    padding-top: 32px;
+    padding-bottom: 110px;
+  }
+}
+
+@media only screen and (max-width: 767.6px) {
+  .footer-box-main {
     flex-direction: column;
     align-items: flex-start;
     padding: 40px 0;
     gap: 40px;
   }
+}
 
-  @media only screen and (max-width: 1279px) {
-      padding-top: 32px;
-      padding-bottom: 110px;
+.footer-contacts {
+  margin-right: 316px;
+}
+
+@media only screen and (max-width: 1279.6px) {
+  .footer-contacts {
+    margin-right: 152px;
   }
 }
 
@@ -67,8 +80,10 @@
 
   font-weight: 700;
   font-size: 20px;
+}
 
-  @media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.6px) {
+  .footer-logo {
     margin-bottom: 20px;
   }
 }
@@ -78,65 +93,28 @@
 }
 
 .footer-nav {
-  margin-left: 0px;
+  display: block;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (max-width: 767.6px) {
   .footer-nav {
-    margin-left: 28px;
+    margin-bottom: 40px;
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .footer-nav {
-    margin-left: 20px;
-  }
-}
-
-.footer-nav-list {
+.footer-links {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 22px;
+  width: 100%;
 }
 
-@media only screen and (max-width: 767px) {
-  .footer-nav-list {
-    gap: 20px;
+@media only screen and (max-width: 767.6px) {
+  .footer-links {
+    flex-direction: column;
   }
 }
 
-.footer-nav-item {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0em;
-}
-
-.footer-socials-list {
-  display: flex;
-  gap: 12px;
-}
-
-.socials-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 44px;
-  height: 44px;
-
-}
-
-.socials-item {
-  border: 1px solid rgba(var(--cl-white), 0.1);
-  border-radius: 10px;
-  height: fit-content;
-}
-
-.socials-icon {
-  fill: white;
-}
 
 .footer-box-policy {
   padding: 23px 0;
@@ -146,7 +124,6 @@
   font-size: 14px;
   line-height: 18px;
   letter-spacing: -0.02em;
-
 }
 
 .footer-box-policy {
@@ -155,7 +132,7 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.6px) {
   .footer-box-policy {
     flex-direction: column;
     align-items: flex-start;
