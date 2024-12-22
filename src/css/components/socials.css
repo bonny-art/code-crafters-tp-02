@@ -18,7 +18,7 @@
 
 .social-link {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   width: 40px;
   height: 40px;
@@ -46,4 +46,17 @@
 
 .header-socials .social-link:hover svg {
   fill: rgb(var(--cl-green));
+}
+
+.social-icon-md {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .social-icon-md {
+    display: block;
+  }
+  .social-icon-sm {
+    display: none;
+  }
 }
