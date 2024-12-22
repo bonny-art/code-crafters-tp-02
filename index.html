@@ -24,7 +24,7 @@
 
     <!-- Styles -->
     <script type="module" crossorigin src="/code-crafters-tp-02/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/code-crafters-tp-02/assets/index-Cz8jNmj_.css">
+    <link rel="stylesheet" crossorigin href="/code-crafters-tp-02/assets/index-BhKTIZ5z.css">
   </head>
   <body>
     <header class="header">
@@ -70,20 +70,21 @@
 
     <main>
       <section id="hero" class="section-hero">
-  <div class="container-hero">
-    <h1 class="hero-title">
-      Discover the joy of learning
-      <span class="light-green">English</span> with us!
-    </h1>
-
-    <div class="hero-controls">
-      <a href="#contact" class="hero-button"> Leave an application </a>
+  <div class="container container-hero">
+    <div class="hero-background-box">
+      <h1 class="hero-title">
+        Discover the joy of learning
+        <span class="light-green">English</span> with us!
+      </h1>
+      <div class="hero-controls">
+        <a href="#contact" class="hero-button"> Leave an application </a>
+      </div>
+      <a class="hero-link" href="#footer">
+        <svg class="hero-link-icon" width="24" height="24">
+          <use href="/code-crafters-tp-02/assets/icons-DkyxRM-e.svg#arrow-down"></use>
+        </svg>
+      </a>
     </div>
-    <a class="hero-link" href="#footer">
-      <svg class="hero-link-icon" width="24" height="24">
-        <use href="/code-crafters-tp-02/assets/icons-DkyxRM-e.svg#arrow-down"></use>
-      </svg>
-    </a>
   </div>
 </section>
 
@@ -636,35 +637,39 @@
   </div>
 </footer>
 
-    <div class="backdrop">
-  <div class="mobile-menu">
-    <div class="mobile-menu-container">
-      <button class="mobile-menu-close" aria-label="Close menu">
-        <svg class="mobile-menu-close-icon" width="24" height="24">
+    <div class="backdrop backdrop-js">
+  <div class="mobile-menu mobile-menu-js">
+    <div class="mobile-content">
+      <button
+        class="mobile-menu-close-btn mobile-menu-close-js"
+        aria-label="Close menu"
+      >
+        <svg class="mobile-menu-close-icon" width="32" height="32">
           <use href="../img/icons.svg#close"></use>
         </svg>
       </button>
+      <div class="mobile-menu-wrapper">
+        <nav class="mobile-menu-nav">
+          <!-- place: header-nav-list for header, place: footer-nav-list for footer, place: mobile-menu-nav-list for mobile menu -->
+<ul class="nav-list mobile-menu-nav-list">
+  <li class="nav-item">
+    <a href="#about" class="nav-link">About us</a>
+  </li>
+  <li class="nav-item">
+    <a href="#lessons" class="nav-link">Our lessons</a>
+  </li>
+  <li class="nav-item">
+    <a href="#teachers" class="nav-link">Teachers</a>
+  </li>
+  <li class="nav-item">
+    <a href="#reviews" class="nav-link">Reviews</a>
+  </li>
+  <li class="nav-item">
+    <a href="#contact" class="nav-link">Contact us</a>
+  </li>
+</ul>
 
-      <nav class="mobile-menu-nav">
-        <ul class="mobile-menu-nav-list">
-          <li class="mobile-menu-nav-item">
-            <a href="#" class="mobile-menu-nav-link">About us</a>
-          </li>
-          <li class="mobile-menu-nav-item">
-            <a href="#" class="mobile-menu-nav-link">Our lessons</a>
-          </li>
-          <li class="mobile-menu-nav-item">
-            <a href="#" class="mobile-menu-nav-link">Teachers</a>
-          </li>
-          <li class="mobile-menu-nav-item">
-            <a href="#" class="mobile-menu-nav-link">Teachers</a>
-          </li>
-          <li class="mobile-menu-nav-item">
-            <a href="#" class="mobile-menu-nav-link">Contact us</a>
-          </li>
-        </ul>
-
-       <!-- Socials component -->
+        </nav>
         <ul class="menu-social mobile-menu-socials">
     <li class="menu-social-item">
       <a
@@ -706,7 +711,7 @@
       </a>
     </li>
   </ul>
-      </nav>
+      </div>
     </div>
   </div>
 </div>
