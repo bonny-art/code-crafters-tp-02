@@ -28,6 +28,7 @@
   .content {
     padding: 64px 64px 142px;
     background: var(--cl-green-linear);
+
     border-radius: 30px;
 
     @media only screen and (max-width: 1279.6px) {
@@ -36,6 +37,7 @@
 
     @media only screen and (max-width: 767.6px) {
       padding: 40px 18px 64px;
+      border-radius: 16px;
     }
 
     .title {
