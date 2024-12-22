@@ -110,16 +110,18 @@ To start working with the project locally, follow these steps:
 
 ## Technologies Used
 
-## Technologies Used
-
 1. **HTML** - The standard markup language for creating web pages and web
    applications.
 2. **CSS** - A stylesheet language used to describe the presentation of a
    document written in HTML.
-3. **JavaScript** - A programming language that enables dynamic interactions on
+3. **PostCSS** - A tool for transforming CSS with JavaScript plugins, enabling
+   features like autoprefixing, minification, and custom transformations.
+4. **JavaScript** - A programming language that enables dynamic interactions on
    web pages, making them interactive and responsive.
-4. **Swiper** - A mobile-friendly touch slider with hardware-accelerated
+5. **Swiper** - A mobile-friendly touch slider with hardware-accelerated
    transitions and smooth interactions.
+6. **Vite** - A fast, next-generation build tool that provides an optimized
+   development environment for modern web projects.
 
 ## Design
 
