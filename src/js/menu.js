@@ -2,6 +2,7 @@ const burgerButton = document.querySelector('.js-burger-button');
 const mobileMenu = document.querySelector('.mobile-menu-js');
 const backdrop = document.querySelector('.backdrop-js');
 const closeButton = document.querySelector('.mobile-menu-close-js');
+const navLinks = document.querySelectorAll('.mobile-menu-nav-list a');
 
 const disableScroll = () => {
   document.body.style.overflow = 'hidden';
@@ -45,4 +46,10 @@ document.addEventListener('keydown', event => {
   ) {
     closeMenu();
   }
+});
+
+navLinks.forEach(link => {
+  link.addEventListener('click', event => {
+    closeMenu();
+  });
 });
