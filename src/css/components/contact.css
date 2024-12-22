@@ -12,7 +12,6 @@
   .contact-description {
     width: 586px;
     margin-bottom: 64px;
-    color: inherit;
   }
 }
 
@@ -93,6 +92,12 @@
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .contact-form .contact-form-fields {
+    margin-bottom: 32px;
+  }
+}
+
 .contact-form {
   display: inline-flex;
   flex-direction: column;
@@ -154,6 +159,8 @@
 @media only screen and (min-width: 768px) {
   .contact-form-options-title {
     margin-top: 12px;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
@@ -206,6 +213,7 @@ input[type='radio'] {
   margin-right: 8px;
   background-color: rgb(var(--cl-white));
   transition: var(--fast-trns);
+  transition-property: background-color, border-color, box-shadow;
 }
 
 .custom-radio input[type='radio']:checked + label::before {
@@ -219,6 +227,7 @@ input[type='radio'] {
   padding: 14px 28px;
   justify-content: center;
   align-items: center;
+  line-height: 1.71;
   border-radius: 12px;
   background: rgb(var(--cl-green));
   border: none;
