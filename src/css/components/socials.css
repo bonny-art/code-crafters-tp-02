@@ -22,7 +22,6 @@
   align-items: center;
   width: 40px;
   height: 40px;
-  padding: 8px;
   border: 1px solid rgba(var(--cl-white), 0.1);
   border-radius: 10px;
   transition: border-color var(--fast-trns);
@@ -46,4 +45,17 @@
 
 .header-socials .social-link:hover svg {
   fill: rgb(var(--cl-green));
+}
+
+.social-icon-md {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .social-icon-md {
+    display: block;
+  }
+  .social-icon-sm {
+    display: none;
+  }
 }
