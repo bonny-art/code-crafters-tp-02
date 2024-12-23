@@ -48,3 +48,13 @@
     transform: translateX(0%);
   }
 }
+
+.footer-nav-list {
+  gap: 8px;
+}
+
+@media screen and (max-width: 767.6px) {
+  .footer-nav-list {
+    gap: 14px;
+  }
+}

@@ -5,6 +5,17 @@
   gap: 12px;
 }
 
+@media only screen and (max-width: 767.6px) {
+  .footer-socials {
+    gap: 14px;
+  }
+}
+
+.footer-socials {
+  gap: 19px;
+  margin-top: 6px;
+}
+
 .mobile-menu-socials {
   margin: 0 auto;
   margin-bottom: 20px;
